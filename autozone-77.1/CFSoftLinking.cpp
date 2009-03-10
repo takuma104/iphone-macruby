@@ -25,11 +25,14 @@
 
 static void *getCoreFoundationFuncPtr(const char *inFuncName)
 {
-    static const struct mach_header *header = NSAddImage("/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation", NSADDIMAGE_OPTION_WITH_SEARCHING);
+/*    static const struct mach_header *header = NSAddImage("/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation", NSADDIMAGE_OPTION_WITH_SEARCHING);
     NSSymbol symbol = NSLookupSymbolInImage(header, inFuncName, NSLOOKUPSYMBOLINIMAGE_OPTION_BIND);
     return (symbol != NULL) ? NSAddressOfSymbol(symbol) : NULL;
-}
-
+*/
+	return NULL;
+ 
+ }
+/*
 CFTypeRef CFRetain(CFTypeRef cf) {
     static CFTypeRef (*func) (CFTypeRef) = (CFTypeRef (*) (CFTypeRef))getCoreFoundationFuncPtr("_CFRetain");
     return func ? func(cf) : NULL;
@@ -153,3 +156,4 @@ const CFStringRef get_kCFRunLoopCommonModes() {
     static CFStringRef* data = (CFStringRef*)getCoreFoundationFuncPtr("_kCFRunLoopCommonModes");
     return (data ? *data : NULL);
 }
+*/

@@ -18,7 +18,7 @@
  * @APPLE_APACHE_LICENSE_HEADER_END@
  */
 
-#import <objc/malloc.h>
+#import <objc/runtime.h>
 
 /*********	Random generation of sizes	************/
 

@@ -23,21 +23,21 @@
 #include "AutoThread.h"
 #include "AutoZone.h"
 
-#if defined(__ppc__) || defined(__ppc64__)
+//#if defined(__ppc__) || defined(__ppc64__)
 // get definitions for C_RED_ZONE.
 // http://developer.apple.com/documentation/DeveloperTools/Conceptual/LowLevelABI/Articles/32bitPowerPC.html#//apple_ref/doc/uid/TP40002438-SW6
 // http://developer.apple.com/documentation/DeveloperTools/Conceptual/LowLevelABI/Articles/64bitPowerPC.html#//apple_ref/doc/uid/TP40002471-SW17
 // NOTE:  the following header file contradicts the public ppc64 ABI, specifying a larger value for C_RED_ZONE.
-#include <architecture/ppc/cframe.h>
-#elif defined(__i386__)
+//#include <architecture/ppc/cframe.h>
+//#elif defined(__i386__)
 // 32-bit x86 uses no red zone.
 #define C_RED_ZONE 0
-#elif defined(__x86_64__)
+//#elif defined(__x86_64__)
 // according to  http://www.x86-64.org/documentation/abi.pdf (page 15)
-#define C_RED_ZONE 128
-#else
-#error Unknown Architecture
-#endif
+//#define C_RED_ZONE 128
+//#else
+//#error Unknown Architecture
+//#endif
 
 extern "C" char *__crashreporter_info__;
 
@@ -65,11 +65,12 @@ namespace Auto {
     }
 
     union ThreadState {
-#if defined(__i386__)
-        i386_thread_state_t  regs;
-#define THREAD_STATE_COUNT i386_THREAD_STATE_COUNT
-#define THREAD_STATE_FLAVOR i386_THREAD_STATE
-#define THREAD_STATE_SP __esp
+//#if defined(__i386__)
+        arm_thread_state_t  regs;
+#define THREAD_STATE_COUNT ARM_THREAD_STATE_COUNT
+#define THREAD_STATE_FLAVOR ARM_THREAD_STATE
+#define THREAD_STATE_SP __sp
+/*
 #elif defined(__ppc__)
         ppc_thread_state_t   regs;
 #define THREAD_STATE_COUNT PPC_THREAD_STATE_COUNT
@@ -88,6 +89,7 @@ namespace Auto {
 #else
 #error Unknown Architecture
 #endif
+*/
         thread_state_data_t  data;
         
         void* get_stack_pointer() {

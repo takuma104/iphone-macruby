@@ -436,7 +436,7 @@ namespace Auto {
     //
     
     void Monitor::send_block_description() {
-        print(kPropertyListXMLHeader);
+/*        print(kPropertyListXMLHeader);
         // get zone
         malloc_zone_t *zone = (malloc_zone_t *)strtoul(_args[2], NULL, 0);
         // get block
@@ -466,6 +466,7 @@ namespace Auto {
             }
         }
         print(kPropertyListXMLFooter);
+*/
     }
 
     //

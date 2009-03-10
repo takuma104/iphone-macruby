@@ -493,8 +493,9 @@ namespace Auto {
                           : "memory");
         return loaded;
 
-#else
-#error architecture unsupported
+#else // ARM
+		register intptr_t loaded = 0;                           // value loaded from memory
+        return loaded;
 #endif
     }
 

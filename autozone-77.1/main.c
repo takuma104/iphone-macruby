@@ -22,7 +22,7 @@
 #import "auto_impl_utilities.h"
 
 #import <stdio.h>
-#import <libc.h>
+//#import <libc.h>
 #import <pthread.h>
 #import <assert.h>
 

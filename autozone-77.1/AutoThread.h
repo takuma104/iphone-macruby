@@ -182,8 +182,39 @@ namespace Auto {
         
     };
 
-#else
-#error Unknown Architecture
+#else //ARM
+
+    class NonVolatileRegisters {
+	private:
+        // Non-volatile registers are: ebx, ebp, esp, esi, edi
+        usword_t _registers[5];  // buffer for capturing registers
+        
+        //
+        // capture_registers
+        //
+        // Capture the state of the non-volatile registers.
+        //
+        static inline void capture_registers(register usword_t *registers) {
+			assert(0);
+        }
+		
+	public:
+		
+        //
+        // Constructor
+        //
+        NonVolatileRegisters() { capture_registers(_registers); }
+        
+        
+        //
+        // buffer_range
+        //
+        // Returns the range of captured registers buffer.
+        //
+        inline Range buffer_range() { return Range(_registers, sizeof(_registers)); }
+        
+    };
+
 #endif
 
 

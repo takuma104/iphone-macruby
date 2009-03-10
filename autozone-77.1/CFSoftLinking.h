@@ -20,8 +20,8 @@
 
 #include <CoreFoundation/CoreFoundation.h>
 
-const CFAllocatorRef get_kCFAllocatorMallocZone();
-const CFStringRef get_kCFRunLoopCommonModes();
+//const CFAllocatorRef get_kCFAllocatorMallocZone();
+//const CFStringRef get_kCFRunLoopCommonModes();
 
-#define kCFAllocatorMallocZone get_kCFAllocatorMallocZone()
-#define kCFRunLoopCommonModes get_kCFRunLoopCommonModes()
+//#define kCFAllocatorMallocZone get_kCFAllocatorMallocZone()
+//#define kCFRunLoopCommonModes get_kCFRunLoopCommonModes()

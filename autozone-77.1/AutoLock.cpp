@@ -23,7 +23,9 @@
 namespace Auto {
 
     // ----- Lock -----//
-
+/*
+//	class Lock {
+	
     //
     // lock
     //
@@ -67,13 +69,14 @@ namespace Auto {
 #endif
     }
 
+	};
 
 
     //----- Synchronize -----//
 
     Lock Synchronize::_global_lock;
     
-    
+    */
 };
 
 

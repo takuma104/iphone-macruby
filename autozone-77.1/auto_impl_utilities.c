@@ -23,7 +23,7 @@
 
 #import <malloc/malloc.h>
 #import <mach/mach.h>
-#import <libc.h>
+//#import <libc.h>
 
 /*********  Implementation utilities    ************/
 

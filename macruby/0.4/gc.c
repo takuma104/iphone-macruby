@@ -1206,9 +1206,9 @@ static bool gc_disabled = false;
 void
 Init_PreGC(void)
 {
-/*
     auto_collection_control_t *control;
 
+	auto_zone_create("test");
     __auto_zone = auto_zone();
     
     if (__auto_zone == NULL)
@@ -1217,13 +1217,13 @@ Init_PreGC(void)
     control = auto_collection_parameters(__auto_zone);
     control->scan_external_callout = 
 	rb_objc_scan_external_callout;
-*/
-    //if (getenv("GC_DEBUG")) {
-//	control->log = AUTO_LOG_COLLECTIONS | AUTO_LOG_REGIONS | AUTO_LOG_UNUSUAL;
-    //}
-    //if (getenv("GC_DISABLE")) {
-	gc_disabled = true;
-    //}
+    
+	if (getenv("GC_DEBUG")) {
+	control->log = AUTO_LOG_COLLECTIONS | AUTO_LOG_REGIONS | AUTO_LOG_UNUSUAL;
+    }
+    if (getenv("GC_DISABLE")) {
+		gc_disabled = true;
+    }
 
     Method m = class_getInstanceMethod((Class)objc_getClass("NSObject"), sel_registerName("finalize"));
     assert(m != NULL);

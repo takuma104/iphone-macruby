@@ -29,7 +29,7 @@
 #include "AutoInUseEnumerator.h"
 
 #include <stdlib.h>
-#include <libc.h>
+//#include <libc.h>
 #include <sys/types.h>
 #include <sys/event.h>
 #include <sys/time.h>
@@ -544,6 +544,8 @@ static boolean_t get_type_and_retain_count(Auto::Zone *zone, void *ptr, auto_mem
     if (is_block) zone->block_refcount_and_layout(ptr, rc, type);
     return is_block;
 }
+
+#define MIN(a,b)  ((a) < (b)? (a) : (b))
 
 static void *auto_realloc(auto_zone_t *zone, void *ptr, size_t size) {
     using namespace Auto;

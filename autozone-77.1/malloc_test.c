@@ -21,7 +21,7 @@
 #import "malloc_test.h"
 #import "auto_zone.h"
 
-#import <libc.h>
+//#import <libc.h>
 #import <stdio.h>
 #import <math.h>
 #import <mach/mach_init.h>

@@ -21,8 +21,8 @@
 #import "auto_impl_utilities.h"
 #import "auto_bitmaps.h"
 
-#import <libc.h>
-#import <objc/malloc.h>
+//#import <libc.h>
+#import <objc/runtime.h>
 
 
 
@@ -158,6 +158,7 @@
 //     
 
 
+#define MAX_SEQ 7
 
 
 //

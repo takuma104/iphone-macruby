@@ -93,13 +93,13 @@ namespace Auto {
         maximum_quanta               = (1ul << maximum_quanta_log2),
     
         // small allocation quantum size (16/32)
-#if defined(__ppc64__) || defined(__x86_64__)
-        allocate_quantum_small_log2  = 5u, // 32 byte quantum (FreeBlock is 32 bytes)
-#elif defined(__ppc__) || defined(__i386__)
+//#if defined(__ppc64__) || defined(__x86_64__)
+//        allocate_quantum_small_log2  = 5u, // 32 byte quantum (FreeBlock is 32 bytes)
+//#elif defined(__ppc__) || defined(__i386__)
         allocate_quantum_small_log2  = 4u, // 16 byte quantum
-#else
-#error unknown architecture
-#endif
+//#else
+//#error unknown architecture
+//#endif
         allocate_quantum_small       = (1ul << allocate_quantum_small_log2),
         
         // medium allocation quantum size (1024/2048 bytes)
@@ -111,13 +111,13 @@ namespace Auto {
         allocate_quantum_large       = (1ul << allocate_quantum_large_log2),
         
         // arena size
-#if defined(__ppc64__) || defined(__x86_64__)
-        arena_size_log2              = 35ul,        // 32G
-#elif defined(__ppc__) || defined(__i386__)
+//#if defined(__ppc64__) || defined(__x86_64__)
+//        arena_size_log2              = 35ul,        // 32G
+//#elif defined(__ppc__) || defined(__i386__)
         arena_size_log2              = 32ul,         // 4G
-#else
-#error unknown architecture
-#endif
+//#else
+//#error unknown architecture
+//#endif
         
         // maximum number of large quantum that can be allocated
         allocate_quantum_large_max_log2 = arena_size_log2 - allocate_quantum_large_log2,

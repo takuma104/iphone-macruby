@@ -19,7 +19,7 @@
  */
 
 #import <architecture/byte_order.h>
-#import <libc.h>
+//#import <libc.h>
 
 #include <assert.h>
 

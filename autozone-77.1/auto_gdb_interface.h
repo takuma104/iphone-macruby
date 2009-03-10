@@ -23,7 +23,7 @@
 
 #include <stdint.h>
 #include <sys/types.h>
-#include <auto_zone.h>
+#include "auto_zone.h"
 
 __BEGIN_DECLS
 

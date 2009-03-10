@@ -11,6 +11,30 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		8D25D4AE0F66AA2E00B9073F /* AutoMemoryScanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4750F66AA2E00B9073F /* AutoMemoryScanner.cpp */; };
+		8D25D4AF0F66AA2E00B9073F /* AutoWriteBarrier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4760F66AA2E00B9073F /* AutoWriteBarrier.cpp */; };
+		8D25D4B00F66AA2E00B9073F /* AutoMonitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D47A0F66AA2E00B9073F /* AutoMonitor.cpp */; };
+		8D25D4B10F66AA2E00B9073F /* AutoZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4800F66AA2E00B9073F /* AutoZone.cpp */; };
+		8D25D4B20F66AA2E00B9073F /* AutoRegion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4820F66AA2E00B9073F /* AutoRegion.cpp */; };
+		8D25D4B30F66AA2E00B9073F /* AutoEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4840F66AA2E00B9073F /* AutoEnvironment.cpp */; };
+		8D25D4B40F66AA2E00B9073F /* AutoLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4860F66AA2E00B9073F /* AutoLock.cpp */; };
+		8D25D4B50F66AA2E00B9073F /* agc_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4870F66AA2E00B9073F /* agc_interface.cpp */; };
+		8D25D4B60F66AA2E00B9073F /* auto_trace.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D48A0F66AA2E00B9073F /* auto_trace.c */; };
+		8D25D4B80F66AA2E00B9073F /* auto_impl_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D48F0F66AA2E00B9073F /* auto_impl_utilities.c */; };
+		8D25D4B90F66AA2E00B9073F /* CFSoftLinking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4900F66AA2E00B9073F /* CFSoftLinking.cpp */; };
+		8D25D4BA0F66AA2E00B9073F /* auto_zone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4920F66AA2E00B9073F /* auto_zone.cpp */; };
+		8D25D4BB0F66AA2E00B9073F /* AutoBitmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4930F66AA2E00B9073F /* AutoBitmap.cpp */; };
+		8D25D4BD0F66AA2E00B9073F /* AutoCollector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4950F66AA2E00B9073F /* AutoCollector.cpp */; };
+		8D25D4BE0F66AA2E00B9073F /* AutoAdmin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4960F66AA2E00B9073F /* AutoAdmin.cpp */; };
+		8D25D4BF0F66AA2E00B9073F /* AutoThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4980F66AA2E00B9073F /* AutoThread.cpp */; };
+		8D25D4C00F66AA2E00B9073F /* AutoLarge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D49A0F66AA2E00B9073F /* AutoLarge.cpp */; };
+		8D25D4C10F66AA2E00B9073F /* auto_gdb_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D49E0F66AA2E00B9073F /* auto_gdb_interface.cpp */; };
+		8D25D4C20F66AA2E00B9073F /* AutoDefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4A20F66AA2E00B9073F /* AutoDefs.cpp */; };
+		8D25D4C30F66AA2E00B9073F /* auto_bitmaps.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4A70F66AA2E00B9073F /* auto_bitmaps.c */; };
+		8D25D4C40F66AA2E00B9073F /* auto_weak.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4A80F66AA2E00B9073F /* auto_weak.c */; };
+		8D25D4C50F66AA2E00B9073F /* AutoSubzone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4A90F66AA2E00B9073F /* AutoSubzone.cpp */; };
+		8D25D4C60F66AA2E00B9073F /* AutoHashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4AB0F66AA2E00B9073F /* AutoHashTable.cpp */; };
+		8D25D4C70F66AA2E00B9073F /* AutoInUseEnumerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4AC0F66AA2E00B9073F /* AutoInUseEnumerator.cpp */; };
 		8D7B31060F665FE600BE35D8 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B30BD0F665FE600BE35D8 /* version.c */; };
 		8D7B31070F665FE600BE35D8 /* variable.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B30BE0F665FE600BE35D8 /* variable.c */; };
 		8D7B31080F665FE600BE35D8 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B30BF0F665FE600BE35D8 /* util.c */; };
@@ -86,7 +110,6 @@
 		8DADEA720F666EA500E3EB1C /* vm_dump.c in Sources */ = {isa = PBXBuildFile; fileRef = 8DADEA710F666EA500E3EB1C /* vm_dump.c */; };
 		8DADEAC80F667A3A00E3EB1C /* prelude.c in Sources */ = {isa = PBXBuildFile; fileRef = 8DADEAC70F667A3A00E3EB1C /* prelude.c */; };
 		8DADEAE60F667AAF00E3EB1C /* finite.c in Sources */ = {isa = PBXBuildFile; fileRef = 8DADEAE50F667AAF00E3EB1C /* finite.c */; };
-		8DADEAEA0F667C5400E3EB1C /* auto_zone.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DADEAE90F667C5400E3EB1C /* auto_zone.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +120,70 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* iphone_macruby_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iphone_macruby_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D25D46A0F66AA2E00B9073F /* AutoEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoEnvironment.h; path = "autozone-77.1/AutoEnvironment.h"; sourceTree = "<group>"; };
+		8D25D46C0F66AA2E00B9073F /* AutoLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoLock.h; path = "autozone-77.1/AutoLock.h"; sourceTree = "<group>"; };
+		8D25D46D0F66AA2E00B9073F /* auto_weak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = auto_weak.h; path = "autozone-77.1/auto_weak.h"; sourceTree = "<group>"; };
+		8D25D46E0F66AA2E00B9073F /* AutoThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoThread.h; path = "autozone-77.1/AutoThread.h"; sourceTree = "<group>"; };
+		8D25D46F0F66AA2E00B9073F /* auto_trace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = auto_trace.h; path = "autozone-77.1/auto_trace.h"; sourceTree = "<group>"; };
+		8D25D4700F66AA2E00B9073F /* malloc_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = malloc_test.h; path = "autozone-77.1/malloc_test.h"; sourceTree = "<group>"; };
+		8D25D4710F66AA2E00B9073F /* CFSoftLinking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFSoftLinking.h; path = "autozone-77.1/CFSoftLinking.h"; sourceTree = "<group>"; };
+		8D25D4720F66AA2E00B9073F /* auto_impl_utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = auto_impl_utilities.h; path = "autozone-77.1/auto_impl_utilities.h"; sourceTree = "<group>"; };
+		8D25D4730F66AA2E00B9073F /* auto_gdb_interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = auto_gdb_interface.h; path = "autozone-77.1/auto_gdb_interface.h"; sourceTree = "<group>"; };
+		8D25D4740F66AA2E00B9073F /* AutoWriteBarrierIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoWriteBarrierIterator.h; path = "autozone-77.1/AutoWriteBarrierIterator.h"; sourceTree = "<group>"; };
+		8D25D4750F66AA2E00B9073F /* AutoMemoryScanner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoMemoryScanner.cpp; path = "autozone-77.1/AutoMemoryScanner.cpp"; sourceTree = "<group>"; };
+		8D25D4760F66AA2E00B9073F /* AutoWriteBarrier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoWriteBarrier.cpp; path = "autozone-77.1/AutoWriteBarrier.cpp"; sourceTree = "<group>"; };
+		8D25D4770F66AA2E00B9073F /* AutoMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoMonitor.h; path = "autozone-77.1/AutoMonitor.h"; sourceTree = "<group>"; };
+		8D25D4780F66AA2E00B9073F /* AutoBitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoBitmap.h; path = "autozone-77.1/AutoBitmap.h"; sourceTree = "<group>"; };
+		8D25D4790F66AA2E00B9073F /* AutoMemoryScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoMemoryScanner.h; path = "autozone-77.1/AutoMemoryScanner.h"; sourceTree = "<group>"; };
+		8D25D47A0F66AA2E00B9073F /* AutoMonitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoMonitor.cpp; path = "autozone-77.1/AutoMonitor.cpp"; sourceTree = "<group>"; };
+		8D25D47B0F66AA2E00B9073F /* AutoRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoRange.h; path = "autozone-77.1/AutoRange.h"; sourceTree = "<group>"; };
+		8D25D47C0F66AA2E00B9073F /* AutoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoList.h; path = "autozone-77.1/AutoList.h"; sourceTree = "<group>"; };
+		8D25D47D0F66AA2E00B9073F /* AutoWriteBarrier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoWriteBarrier.h; path = "autozone-77.1/AutoWriteBarrier.h"; sourceTree = "<group>"; };
+		8D25D47E0F66AA2E00B9073F /* AutoCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoCollector.h; path = "autozone-77.1/AutoCollector.h"; sourceTree = "<group>"; };
+		8D25D47F0F66AA2E00B9073F /* AutoRangeIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoRangeIterator.h; path = "autozone-77.1/AutoRangeIterator.h"; sourceTree = "<group>"; };
+		8D25D4800F66AA2E00B9073F /* AutoZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoZone.cpp; path = "autozone-77.1/AutoZone.cpp"; sourceTree = "<group>"; };
+		8D25D4810F66AA2E00B9073F /* auto_bitmaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = auto_bitmaps.h; path = "autozone-77.1/auto_bitmaps.h"; sourceTree = "<group>"; };
+		8D25D4820F66AA2E00B9073F /* AutoRegion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoRegion.cpp; path = "autozone-77.1/AutoRegion.cpp"; sourceTree = "<group>"; };
+		8D25D4830F66AA2E00B9073F /* AutoHashList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoHashList.h; path = "autozone-77.1/AutoHashList.h"; sourceTree = "<group>"; };
+		8D25D4840F66AA2E00B9073F /* AutoEnvironment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoEnvironment.cpp; path = "autozone-77.1/AutoEnvironment.cpp"; sourceTree = "<group>"; };
+		8D25D4850F66AA2E00B9073F /* auto_zone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = auto_zone.h; path = "autozone-77.1/auto_zone.h"; sourceTree = "<group>"; };
+		8D25D4860F66AA2E00B9073F /* AutoLock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoLock.cpp; path = "autozone-77.1/AutoLock.cpp"; sourceTree = "<group>"; };
+		8D25D4870F66AA2E00B9073F /* agc_interface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = agc_interface.cpp; path = "autozone-77.1/agc_interface.cpp"; sourceTree = "<group>"; };
+		8D25D4880F66AA2E00B9073F /* auto_pthreads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = auto_pthreads.h; path = "autozone-77.1/auto_pthreads.h"; sourceTree = "<group>"; };
+		8D25D4890F66AA2E00B9073F /* auto_collector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = auto_collector.h; path = "autozone-77.1/auto_collector.h"; sourceTree = "<group>"; };
+		8D25D48A0F66AA2E00B9073F /* auto_trace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = auto_trace.c; path = "autozone-77.1/auto_trace.c"; sourceTree = "<group>"; };
+		8D25D48B0F66AA2E00B9073F /* AutoDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoDefs.h; path = "autozone-77.1/AutoDefs.h"; sourceTree = "<group>"; };
+		8D25D48C0F66AA2E00B9073F /* AutoRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoRegion.h; path = "autozone-77.1/AutoRegion.h"; sourceTree = "<group>"; };
+		8D25D48E0F66AA2E00B9073F /* AutoListTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoListTypes.h; path = "autozone-77.1/AutoListTypes.h"; sourceTree = "<group>"; };
+		8D25D48F0F66AA2E00B9073F /* auto_impl_utilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = auto_impl_utilities.c; path = "autozone-77.1/auto_impl_utilities.c"; sourceTree = "<group>"; };
+		8D25D4900F66AA2E00B9073F /* CFSoftLinking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CFSoftLinking.cpp; path = "autozone-77.1/CFSoftLinking.cpp"; sourceTree = "<group>"; };
+		8D25D4910F66AA2E00B9073F /* AutoZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoZone.h; path = "autozone-77.1/AutoZone.h"; sourceTree = "<group>"; };
+		8D25D4920F66AA2E00B9073F /* auto_zone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = auto_zone.cpp; path = "autozone-77.1/auto_zone.cpp"; sourceTree = "<group>"; };
+		8D25D4930F66AA2E00B9073F /* AutoBitmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoBitmap.cpp; path = "autozone-77.1/AutoBitmap.cpp"; sourceTree = "<group>"; };
+		8D25D4950F66AA2E00B9073F /* AutoCollector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoCollector.cpp; path = "autozone-77.1/AutoCollector.cpp"; sourceTree = "<group>"; };
+		8D25D4960F66AA2E00B9073F /* AutoAdmin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoAdmin.cpp; path = "autozone-77.1/AutoAdmin.cpp"; sourceTree = "<group>"; };
+		8D25D4970F66AA2E00B9073F /* AutoConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoConfiguration.h; path = "autozone-77.1/AutoConfiguration.h"; sourceTree = "<group>"; };
+		8D25D4980F66AA2E00B9073F /* AutoThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoThread.cpp; path = "autozone-77.1/AutoThread.cpp"; sourceTree = "<group>"; };
+		8D25D4990F66AA2E00B9073F /* agc_interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = agc_interface.h; path = "autozone-77.1/agc_interface.h"; sourceTree = "<group>"; };
+		8D25D49A0F66AA2E00B9073F /* AutoLarge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoLarge.cpp; path = "autozone-77.1/AutoLarge.cpp"; sourceTree = "<group>"; };
+		8D25D49B0F66AA2E00B9073F /* AutoSubzone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoSubzone.h; path = "autozone-77.1/AutoSubzone.h"; sourceTree = "<group>"; };
+		8D25D49C0F66AA2E00B9073F /* AutoAdmin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoAdmin.h; path = "autozone-77.1/AutoAdmin.h"; sourceTree = "<group>"; };
+		8D25D49D0F66AA2E00B9073F /* AutoLarge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoLarge.h; path = "autozone-77.1/AutoLarge.h"; sourceTree = "<group>"; };
+		8D25D49E0F66AA2E00B9073F /* auto_gdb_interface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = auto_gdb_interface.cpp; path = "autozone-77.1/auto_gdb_interface.cpp"; sourceTree = "<group>"; };
+		8D25D49F0F66AA2E00B9073F /* AutoBlockIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoBlockIterator.h; path = "autozone-77.1/AutoBlockIterator.h"; sourceTree = "<group>"; };
+		8D25D4A00F66AA2E00B9073F /* AutoRootScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoRootScanner.h; path = "autozone-77.1/AutoRootScanner.h"; sourceTree = "<group>"; };
+		8D25D4A10F66AA2E00B9073F /* AutoFreeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoFreeList.h; path = "autozone-77.1/AutoFreeList.h"; sourceTree = "<group>"; };
+		8D25D4A20F66AA2E00B9073F /* AutoDefs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoDefs.cpp; path = "autozone-77.1/AutoDefs.cpp"; sourceTree = "<group>"; };
+		8D25D4A30F66AA2E00B9073F /* AutoAdminIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoAdminIterator.h; path = "autozone-77.1/AutoAdminIterator.h"; sourceTree = "<group>"; };
+		8D25D4A40F66AA2E00B9073F /* AutoHashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoHashTable.h; path = "autozone-77.1/AutoHashTable.h"; sourceTree = "<group>"; };
+		8D25D4A50F66AA2E00B9073F /* AutoSubzoneIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoSubzoneIterator.h; path = "autozone-77.1/AutoSubzoneIterator.h"; sourceTree = "<group>"; };
+		8D25D4A60F66AA2E00B9073F /* AutoInUseEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoInUseEnumerator.h; path = "autozone-77.1/AutoInUseEnumerator.h"; sourceTree = "<group>"; };
+		8D25D4A70F66AA2E00B9073F /* auto_bitmaps.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = auto_bitmaps.c; path = "autozone-77.1/auto_bitmaps.c"; sourceTree = "<group>"; };
+		8D25D4A80F66AA2E00B9073F /* auto_weak.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = auto_weak.c; path = "autozone-77.1/auto_weak.c"; sourceTree = "<group>"; };
+		8D25D4A90F66AA2E00B9073F /* AutoSubzone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoSubzone.cpp; path = "autozone-77.1/AutoSubzone.cpp"; sourceTree = "<group>"; };
+		8D25D4AA0F66AA2E00B9073F /* AutoStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoStatistics.h; path = "autozone-77.1/AutoStatistics.h"; sourceTree = "<group>"; };
+		8D25D4AB0F66AA2E00B9073F /* AutoHashTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoHashTable.cpp; path = "autozone-77.1/AutoHashTable.cpp"; sourceTree = "<group>"; };
+		8D25D4AC0F66AA2E00B9073F /* AutoInUseEnumerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoInUseEnumerator.cpp; path = "autozone-77.1/AutoInUseEnumerator.cpp"; sourceTree = "<group>"; };
 		8D7B30BD0F665FE600BE35D8 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = version.c; path = macruby/0.4/version.c; sourceTree = "<group>"; };
 		8D7B30BE0F665FE600BE35D8 /* variable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = variable.c; path = macruby/0.4/variable.c; sourceTree = "<group>"; };
 		8D7B30BF0F665FE600BE35D8 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = util.c; path = macruby/0.4/util.c; sourceTree = "<group>"; };
@@ -198,7 +285,6 @@
 		8DADEA710F666EA500E3EB1C /* vm_dump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vm_dump.c; path = macruby/0.4/vm_dump.c; sourceTree = "<group>"; };
 		8DADEAC70F667A3A00E3EB1C /* prelude.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = prelude.c; path = macruby/0.4/prelude.c; sourceTree = "<group>"; };
 		8DADEAE50F667AAF00E3EB1C /* finite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = finite.c; path = macruby/0.4/missing/finite.c; sourceTree = "<group>"; };
-		8DADEAE90F667C5400E3EB1C /* auto_zone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = auto_zone.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +320,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				8D25D4610F66AA1600B9073F /* autozone */,
 				8DADEA170F666D4B00E3EB1C /* libffi */,
 				8D7B31C00F66661300BE35D8 /* include */,
 				8D7B30B50F665FC000BE35D8 /* macruby */,
@@ -250,7 +337,6 @@
 			children = (
 				32CA4F630368D1EE00C91783 /* iphone_macruby_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
-				8DADEAE90F667C5400E3EB1C /* auto_zone.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -272,6 +358,77 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D25D4610F66AA1600B9073F /* autozone */ = {
+			isa = PBXGroup;
+			children = (
+				8D25D46A0F66AA2E00B9073F /* AutoEnvironment.h */,
+				8D25D46C0F66AA2E00B9073F /* AutoLock.h */,
+				8D25D46D0F66AA2E00B9073F /* auto_weak.h */,
+				8D25D46E0F66AA2E00B9073F /* AutoThread.h */,
+				8D25D46F0F66AA2E00B9073F /* auto_trace.h */,
+				8D25D4700F66AA2E00B9073F /* malloc_test.h */,
+				8D25D4710F66AA2E00B9073F /* CFSoftLinking.h */,
+				8D25D4720F66AA2E00B9073F /* auto_impl_utilities.h */,
+				8D25D4730F66AA2E00B9073F /* auto_gdb_interface.h */,
+				8D25D4740F66AA2E00B9073F /* AutoWriteBarrierIterator.h */,
+				8D25D4750F66AA2E00B9073F /* AutoMemoryScanner.cpp */,
+				8D25D4760F66AA2E00B9073F /* AutoWriteBarrier.cpp */,
+				8D25D4770F66AA2E00B9073F /* AutoMonitor.h */,
+				8D25D4780F66AA2E00B9073F /* AutoBitmap.h */,
+				8D25D4790F66AA2E00B9073F /* AutoMemoryScanner.h */,
+				8D25D47A0F66AA2E00B9073F /* AutoMonitor.cpp */,
+				8D25D47B0F66AA2E00B9073F /* AutoRange.h */,
+				8D25D47C0F66AA2E00B9073F /* AutoList.h */,
+				8D25D47D0F66AA2E00B9073F /* AutoWriteBarrier.h */,
+				8D25D47E0F66AA2E00B9073F /* AutoCollector.h */,
+				8D25D47F0F66AA2E00B9073F /* AutoRangeIterator.h */,
+				8D25D4800F66AA2E00B9073F /* AutoZone.cpp */,
+				8D25D4810F66AA2E00B9073F /* auto_bitmaps.h */,
+				8D25D4820F66AA2E00B9073F /* AutoRegion.cpp */,
+				8D25D4830F66AA2E00B9073F /* AutoHashList.h */,
+				8D25D4840F66AA2E00B9073F /* AutoEnvironment.cpp */,
+				8D25D4850F66AA2E00B9073F /* auto_zone.h */,
+				8D25D4860F66AA2E00B9073F /* AutoLock.cpp */,
+				8D25D4870F66AA2E00B9073F /* agc_interface.cpp */,
+				8D25D4880F66AA2E00B9073F /* auto_pthreads.h */,
+				8D25D4890F66AA2E00B9073F /* auto_collector.h */,
+				8D25D48A0F66AA2E00B9073F /* auto_trace.c */,
+				8D25D48B0F66AA2E00B9073F /* AutoDefs.h */,
+				8D25D48C0F66AA2E00B9073F /* AutoRegion.h */,
+				8D25D48E0F66AA2E00B9073F /* AutoListTypes.h */,
+				8D25D48F0F66AA2E00B9073F /* auto_impl_utilities.c */,
+				8D25D4900F66AA2E00B9073F /* CFSoftLinking.cpp */,
+				8D25D4910F66AA2E00B9073F /* AutoZone.h */,
+				8D25D4920F66AA2E00B9073F /* auto_zone.cpp */,
+				8D25D4930F66AA2E00B9073F /* AutoBitmap.cpp */,
+				8D25D4950F66AA2E00B9073F /* AutoCollector.cpp */,
+				8D25D4960F66AA2E00B9073F /* AutoAdmin.cpp */,
+				8D25D4970F66AA2E00B9073F /* AutoConfiguration.h */,
+				8D25D4980F66AA2E00B9073F /* AutoThread.cpp */,
+				8D25D4990F66AA2E00B9073F /* agc_interface.h */,
+				8D25D49A0F66AA2E00B9073F /* AutoLarge.cpp */,
+				8D25D49B0F66AA2E00B9073F /* AutoSubzone.h */,
+				8D25D49C0F66AA2E00B9073F /* AutoAdmin.h */,
+				8D25D49D0F66AA2E00B9073F /* AutoLarge.h */,
+				8D25D49E0F66AA2E00B9073F /* auto_gdb_interface.cpp */,
+				8D25D49F0F66AA2E00B9073F /* AutoBlockIterator.h */,
+				8D25D4A00F66AA2E00B9073F /* AutoRootScanner.h */,
+				8D25D4A10F66AA2E00B9073F /* AutoFreeList.h */,
+				8D25D4A20F66AA2E00B9073F /* AutoDefs.cpp */,
+				8D25D4A30F66AA2E00B9073F /* AutoAdminIterator.h */,
+				8D25D4A40F66AA2E00B9073F /* AutoHashTable.h */,
+				8D25D4A50F66AA2E00B9073F /* AutoSubzoneIterator.h */,
+				8D25D4A60F66AA2E00B9073F /* AutoInUseEnumerator.h */,
+				8D25D4A70F66AA2E00B9073F /* auto_bitmaps.c */,
+				8D25D4A80F66AA2E00B9073F /* auto_weak.c */,
+				8D25D4A90F66AA2E00B9073F /* AutoSubzone.cpp */,
+				8D25D4AA0F66AA2E00B9073F /* AutoStatistics.h */,
+				8D25D4AB0F66AA2E00B9073F /* AutoHashTable.cpp */,
+				8D25D4AC0F66AA2E00B9073F /* AutoInUseEnumerator.cpp */,
+			);
+			name = autozone;
 			sourceTree = "<group>";
 		};
 		8D7B30B50F665FC000BE35D8 /* macruby */ = {
@@ -525,7 +682,30 @@
 				8DADEA720F666EA500E3EB1C /* vm_dump.c in Sources */,
 				8DADEAC80F667A3A00E3EB1C /* prelude.c in Sources */,
 				8DADEAE60F667AAF00E3EB1C /* finite.c in Sources */,
-				8DADEAEA0F667C5400E3EB1C /* auto_zone.m in Sources */,
+				8D25D4AE0F66AA2E00B9073F /* AutoMemoryScanner.cpp in Sources */,
+				8D25D4AF0F66AA2E00B9073F /* AutoWriteBarrier.cpp in Sources */,
+				8D25D4B00F66AA2E00B9073F /* AutoMonitor.cpp in Sources */,
+				8D25D4B10F66AA2E00B9073F /* AutoZone.cpp in Sources */,
+				8D25D4B20F66AA2E00B9073F /* AutoRegion.cpp in Sources */,
+				8D25D4B30F66AA2E00B9073F /* AutoEnvironment.cpp in Sources */,
+				8D25D4B40F66AA2E00B9073F /* AutoLock.cpp in Sources */,
+				8D25D4B50F66AA2E00B9073F /* agc_interface.cpp in Sources */,
+				8D25D4B60F66AA2E00B9073F /* auto_trace.c in Sources */,
+				8D25D4B80F66AA2E00B9073F /* auto_impl_utilities.c in Sources */,
+				8D25D4B90F66AA2E00B9073F /* CFSoftLinking.cpp in Sources */,
+				8D25D4BA0F66AA2E00B9073F /* auto_zone.cpp in Sources */,
+				8D25D4BB0F66AA2E00B9073F /* AutoBitmap.cpp in Sources */,
+				8D25D4BD0F66AA2E00B9073F /* AutoCollector.cpp in Sources */,
+				8D25D4BE0F66AA2E00B9073F /* AutoAdmin.cpp in Sources */,
+				8D25D4BF0F66AA2E00B9073F /* AutoThread.cpp in Sources */,
+				8D25D4C00F66AA2E00B9073F /* AutoLarge.cpp in Sources */,
+				8D25D4C10F66AA2E00B9073F /* auto_gdb_interface.cpp in Sources */,
+				8D25D4C20F66AA2E00B9073F /* AutoDefs.cpp in Sources */,
+				8D25D4C30F66AA2E00B9073F /* auto_bitmaps.c in Sources */,
+				8D25D4C40F66AA2E00B9073F /* auto_weak.c in Sources */,
+				8D25D4C50F66AA2E00B9073F /* AutoSubzone.cpp in Sources */,
+				8D25D4C60F66AA2E00B9073F /* AutoHashTable.cpp in Sources */,
+				8D25D4C70F66AA2E00B9073F /* AutoInUseEnumerator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

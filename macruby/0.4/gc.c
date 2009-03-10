@@ -138,8 +138,8 @@ ruby_xmalloc(size_t size)
     }
     if (size == 0) size = 1;
     
-    if (__auto_zone == NULL)
-	rb_objc_no_gc_error();
+//    if (__auto_zone == NULL)
+//	rb_objc_no_gc_error();
     mem = auto_zone_allocate_object(__auto_zone, size, 
 				    AUTO_MEMORY_SCANNED, 0, 0);
     if (!mem) {
@@ -1206,6 +1206,7 @@ static bool gc_disabled = false;
 void
 Init_PreGC(void)
 {
+/*
     auto_collection_control_t *control;
 
     __auto_zone = auto_zone();
@@ -1216,12 +1217,13 @@ Init_PreGC(void)
     control = auto_collection_parameters(__auto_zone);
     control->scan_external_callout = 
 	rb_objc_scan_external_callout;
-    if (getenv("GC_DEBUG")) {
-	control->log = AUTO_LOG_COLLECTIONS | AUTO_LOG_REGIONS | AUTO_LOG_UNUSUAL;
-    }
-    if (getenv("GC_DISABLE")) {
+*/
+    //if (getenv("GC_DEBUG")) {
+//	control->log = AUTO_LOG_COLLECTIONS | AUTO_LOG_REGIONS | AUTO_LOG_UNUSUAL;
+    //}
+    //if (getenv("GC_DISABLE")) {
 	gc_disabled = true;
-    }
+    //}
 
     Method m = class_getInstanceMethod((Class)objc_getClass("NSObject"), sel_registerName("finalize"));
     assert(m != NULL);

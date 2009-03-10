@@ -84,6 +84,9 @@
 		8DADEA6C0F666E0800E3EB1C /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DADEA6B0F666E0800E3EB1C /* libxml2.2.dylib */; };
 		8DADEA6F0F666E5B00E3EB1C /* iseq.c in Sources */ = {isa = PBXBuildFile; fileRef = 8DADEA6E0F666E5B00E3EB1C /* iseq.c */; };
 		8DADEA720F666EA500E3EB1C /* vm_dump.c in Sources */ = {isa = PBXBuildFile; fileRef = 8DADEA710F666EA500E3EB1C /* vm_dump.c */; };
+		8DADEAC80F667A3A00E3EB1C /* prelude.c in Sources */ = {isa = PBXBuildFile; fileRef = 8DADEAC70F667A3A00E3EB1C /* prelude.c */; };
+		8DADEAE60F667AAF00E3EB1C /* finite.c in Sources */ = {isa = PBXBuildFile; fileRef = 8DADEAE50F667AAF00E3EB1C /* finite.c */; };
+		8DADEAEA0F667C5400E3EB1C /* auto_zone.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DADEAE90F667C5400E3EB1C /* auto_zone.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -193,6 +196,9 @@
 		8DADEA6B0F666E0800E3EB1C /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		8DADEA6E0F666E5B00E3EB1C /* iseq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = iseq.c; path = macruby/0.4/iseq.c; sourceTree = "<group>"; };
 		8DADEA710F666EA500E3EB1C /* vm_dump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vm_dump.c; path = macruby/0.4/vm_dump.c; sourceTree = "<group>"; };
+		8DADEAC70F667A3A00E3EB1C /* prelude.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = prelude.c; path = macruby/0.4/prelude.c; sourceTree = "<group>"; };
+		8DADEAE50F667AAF00E3EB1C /* finite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = finite.c; path = macruby/0.4/missing/finite.c; sourceTree = "<group>"; };
+		8DADEAE90F667C5400E3EB1C /* auto_zone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = auto_zone.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +250,7 @@
 			children = (
 				32CA4F630368D1EE00C91783 /* iphone_macruby_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				8DADEAE90F667C5400E3EB1C /* auto_zone.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -320,6 +327,7 @@
 				8D7B30D40F665FE600BE35D8 /* random.c */,
 				8D7B30D50F665FE600BE35D8 /* process.c */,
 				8D7B30D60F665FE600BE35D8 /* proc.c */,
+				8DADEAC70F667A3A00E3EB1C /* prelude.c */,
 				8D7B30D70F665FE600BE35D8 /* prec.c */,
 				8DADEA020F666A4B00E3EB1C /* parse.c */,
 				8D7B30D80F665FE600BE35D8 /* pack.c */,
@@ -335,6 +343,7 @@
 				8DADEA6E0F666E5B00E3EB1C /* iseq.c */,
 				8D7B30E40F665FE600BE35D8 /* hash.c */,
 				8D7B30E60F665FE600BE35D8 /* gc.c */,
+				8DADEAE50F667AAF00E3EB1C /* finite.c */,
 				8D7B30E70F665FE600BE35D8 /* file.c */,
 				8D7B30EB0F665FE600BE35D8 /* eval.c */,
 				8D7B30EC0F665FE600BE35D8 /* error.c */,
@@ -514,6 +523,9 @@
 				8DADEA320F666D9F00E3EB1C /* vm.c in Sources */,
 				8DADEA6F0F666E5B00E3EB1C /* iseq.c in Sources */,
 				8DADEA720F666EA500E3EB1C /* vm_dump.c in Sources */,
+				8DADEAC80F667A3A00E3EB1C /* prelude.c in Sources */,
+				8DADEAE60F667AAF00E3EB1C /* finite.c in Sources */,
+				8DADEAEA0F667C5400E3EB1C /* auto_zone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

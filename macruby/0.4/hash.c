@@ -16,7 +16,7 @@
 #include "id.h"
 #include "objc.h"
 
-#include <crt_externs.h>
+//#include <crt_externs.h>
 
 static VALUE rb_hash_s_try_convert(VALUE, VALUE);
 
@@ -1570,8 +1570,9 @@ rb_hash_compare_by_id_p(VALUE hash)
 static int path_tainted = -1;
 
 static char **origenviron;
-#undef environ
-#define environ (*_NSGetEnviron())
+//#undef environ
+//#define environ (*_NSGetEnviron())
+extern char **environ;
 #define GET_ENVIRON(e) (e)
 #define FREE_ENVIRON(e)
 

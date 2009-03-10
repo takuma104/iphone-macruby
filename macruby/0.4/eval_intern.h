@@ -28,9 +28,9 @@
 #include "ruby/st.h"
 #include "dln.h"
 
-#ifdef __APPLE__
-#include <crt_externs.h>
-#endif
+//#ifdef __APPLE__
+//#include <crt_externs.h>
+//#endif
 
 /* Make alloca work the best possible way.  */
 #ifdef __GNUC__

@@ -1266,11 +1266,11 @@ rb_objc_call2(VALUE recv, VALUE klass, SEL sel, IMP imp,
 		else {
 		    struct objc_super s;
 		    s.receiver = ocrcv;
-#if defined(__LP64__)
+//#if defined(__LP64__)
 		    s.super_class = (Class)klass;
-#else
-		    s.class = (Class)klass;
-#endif
+//#else
+//		    s.class = (Class)klass;
+//#endif
 		    ffi_ret = objc_msgSendSuper(&s, sel);
 		}
 	    }

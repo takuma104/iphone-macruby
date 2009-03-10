@@ -12,9 +12,9 @@
 #ifndef RUBY_H
 #define RUBY_H 1
 
-#include <ruby/ruby.h>
+#include "ruby/ruby.h"
 #if RUBY_VM
-#include <ruby/mvm.h>
+#include "ruby/mvm.h"
 #endif
 
 extern void ruby_set_debug_option(const char *);

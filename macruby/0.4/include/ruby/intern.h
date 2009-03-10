@@ -29,7 +29,7 @@ extern "C" {
 #if RUBY_INCLUDED_AS_FRAMEWORK
 #include <MacRuby/ruby/st.h>
 #else
-#include <ruby/st.h>
+#include "ruby/st.h"
 #endif
 
 /* 

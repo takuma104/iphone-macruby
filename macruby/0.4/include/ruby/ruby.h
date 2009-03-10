@@ -526,7 +526,7 @@ struct RClass {
 #  define RCLASS_SUPER(m) (*(VALUE *)((void *)m + (sizeof(void *) * 1)))
 #  define RCLASS_SET_SUPER(m, s) (RCLASS_SUPER(m) = s)
 #  define _RCLASS_INFO(m) (*(long *)((void *)m + (sizeof(void *) * 4)))
-#  define RCLASS_META(m) (_RCLASS_INFO(m) & CLS_META)
+#  define RCLASS_META(m) (_RCLASS_INFO(m) & 2L)
 # endif
 # define RCLASS_RUBY(m) ((RCLASS_VERSION(m) & RCLASS_IS_RUBY_CLASS) == RCLASS_IS_RUBY_CLASS)
 # define RCLASS_MODULE(m) ((RCLASS_VERSION(m) & RCLASS_IS_MODULE) == RCLASS_IS_MODULE)

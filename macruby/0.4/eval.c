@@ -71,11 +71,11 @@ ruby_init(void)
 	return;
     ruby_initialized = 1;
 
-#ifdef __MACOS__
+//#ifdef __MACOS__
     rb_origenviron = 0;
-#else
-    rb_origenviron = environ;
-#endif
+//#else
+//    rb_origenviron = environ;
+//#endif
 
 #if WITH_OBJC
     char *s;

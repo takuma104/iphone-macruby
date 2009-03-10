@@ -1,0 +1,1241 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3907B1840B7912D60042CA69 /* AutoRootScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 3907B1820B7912D60042CA69 /* AutoRootScanner.h */; };
+		3907B1860B7912D60042CA69 /* AutoRootScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 3907B1820B7912D60042CA69 /* AutoRootScanner.h */; };
+		3907B1880B7912D60042CA69 /* AutoRootScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 3907B1820B7912D60042CA69 /* AutoRootScanner.h */; };
+		399C6D840B780962006686B9 /* auto_gdb_interface.h in Headers */ = {isa = PBXBuildFile; fileRef = 399C6D830B780962006686B9 /* auto_gdb_interface.h */; };
+		399C6D850B780962006686B9 /* auto_gdb_interface.h in Headers */ = {isa = PBXBuildFile; fileRef = 399C6D830B780962006686B9 /* auto_gdb_interface.h */; };
+		399C6D860B780962006686B9 /* auto_gdb_interface.h in Headers */ = {isa = PBXBuildFile; fileRef = 399C6D830B780962006686B9 /* auto_gdb_interface.h */; };
+		399C6D960B780B0D006686B9 /* auto_gdb_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 399C6D950B780B0D006686B9 /* auto_gdb_interface.cpp */; };
+		399C6D970B780B0D006686B9 /* auto_gdb_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 399C6D950B780B0D006686B9 /* auto_gdb_interface.cpp */; };
+		399C6D980B780B0D006686B9 /* auto_gdb_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 399C6D950B780B0D006686B9 /* auto_gdb_interface.cpp */; };
+		39B377730A5905A300AEEF7C /* auto_trace.h in Headers */ = {isa = PBXBuildFile; fileRef = 39B377710A5905A300AEEF7C /* auto_trace.h */; };
+		39B377740A5905A300AEEF7C /* auto_trace.c in Sources */ = {isa = PBXBuildFile; fileRef = 39B377720A5905A300AEEF7C /* auto_trace.c */; };
+		39B377750A5905A300AEEF7C /* auto_trace.h in Headers */ = {isa = PBXBuildFile; fileRef = 39B377710A5905A300AEEF7C /* auto_trace.h */; };
+		39B377760A5905A300AEEF7C /* auto_trace.c in Sources */ = {isa = PBXBuildFile; fileRef = 39B377720A5905A300AEEF7C /* auto_trace.c */; };
+		39B377790A5905A300AEEF7C /* auto_trace.h in Headers */ = {isa = PBXBuildFile; fileRef = 39B377710A5905A300AEEF7C /* auto_trace.h */; };
+		39B3777A0A5905A300AEEF7C /* auto_trace.c in Sources */ = {isa = PBXBuildFile; fileRef = 39B377720A5905A300AEEF7C /* auto_trace.c */; };
+		39D2F9100B3C6007005F3C78 /* test_bitmaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39D2F90F0B3C6007005F3C78 /* test_bitmaps.cpp */; };
+		39D2F9570B3C6BD4005F3C78 /* AutoBitmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9341D06527D0300155736 /* AutoBitmap.cpp */; };
+		39E38E7D08216865008941BD /* CFSoftLinking.h in Headers */ = {isa = PBXBuildFile; fileRef = 39E38E7B08216865008941BD /* CFSoftLinking.h */; };
+		39E38E7E08216865008941BD /* CFSoftLinking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39E38E7C08216865008941BD /* CFSoftLinking.cpp */; };
+		39E38E7F08216865008941BD /* CFSoftLinking.h in Headers */ = {isa = PBXBuildFile; fileRef = 39E38E7B08216865008941BD /* CFSoftLinking.h */; };
+		39E38E8008216865008941BD /* CFSoftLinking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39E38E7C08216865008941BD /* CFSoftLinking.cpp */; };
+		CF110849083CD34E00220F54 /* auto_impl_utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF5C47802FDFEC301D56035 /* auto_impl_utilities.h */; };
+		CF11084B083CD34E00220F54 /* auto_weak.h in Headers */ = {isa = PBXBuildFile; fileRef = 83FE4346061E2E5A00AA5564 /* auto_weak.h */; };
+		CF11084C083CD34E00220F54 /* AutoAdmin.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9341A06527D0300155736 /* AutoAdmin.h */; };
+		CF11084E083CD34E00220F54 /* AutoBitmap.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9341E06527D0300155736 /* AutoBitmap.h */; };
+		CF11084F083CD34E00220F54 /* AutoConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9341F06527D0300155736 /* AutoConfiguration.h */; };
+		CF110850083CD34E00220F54 /* AutoDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342106527D0300155736 /* AutoDefs.h */; };
+		CF110851083CD34E00220F54 /* AutoEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342306527D0300155736 /* AutoEnvironment.h */; };
+		CF110852083CD34E00220F54 /* AutoHashList.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342406527D0300155736 /* AutoHashList.h */; };
+		CF110853083CD34E00220F54 /* AutoHashTable.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342606527D0300155736 /* AutoHashTable.h */; };
+		CF110854083CD34E00220F54 /* AutoLarge.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342906527D0300155736 /* AutoLarge.h */; };
+		CF110856083CD34E00220F54 /* AutoList.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342B06527D0300155736 /* AutoList.h */; };
+		CF110857083CD34E00220F54 /* AutoListTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342C06527D0300155736 /* AutoListTypes.h */; };
+		CF110858083CD34E00220F54 /* AutoLock.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342F06527D0300155736 /* AutoLock.h */; };
+		CF110859083CD34E00220F54 /* AutoRange.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343006527D0300155736 /* AutoRange.h */; };
+		CF11085B083CD34E00220F54 /* AutoRegion.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343306527D0300155736 /* AutoRegion.h */; };
+		CF11085C083CD34E00220F54 /* AutoStatistics.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343406527D0300155736 /* AutoStatistics.h */; };
+		CF11085D083CD34E00220F54 /* AutoSubzone.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343606527D0300155736 /* AutoSubzone.h */; };
+		CF11085E083CD34E00220F54 /* AutoWriteBarrier.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343806527D0300155736 /* AutoWriteBarrier.h */; };
+		CF11085F083CD34E00220F54 /* AutoZone.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343A06527D0300155736 /* AutoZone.h */; };
+		CF110861083CD34E00220F54 /* agc_interface.h in Headers */ = {isa = PBXBuildFile; fileRef = CFBF70190653D3E100EC4BD2 /* agc_interface.h */; };
+		CF110862083CD34E00220F54 /* AutoAdminIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7A6065AE1300071E64C /* AutoAdminIterator.h */; };
+		CF110863083CD34E00220F54 /* AutoBlockIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7A7065AE1300071E64C /* AutoBlockIterator.h */; };
+		CF110864083CD34E00220F54 /* AutoCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7A9065AE1300071E64C /* AutoCollector.h */; };
+		CF110865083CD34E00220F54 /* AutoRangeIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7AA065AE1300071E64C /* AutoRangeIterator.h */; };
+		CF110866083CD34E00220F54 /* AutoSubzoneIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7AB065AE1300071E64C /* AutoSubzoneIterator.h */; };
+		CF110867083CD34E00220F54 /* AutoWriteBarrierIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7AD065AE1300071E64C /* AutoWriteBarrierIterator.h */; };
+		CF110868083CD34E00220F54 /* AutoThread.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC4A183065C26FA0085433E /* AutoThread.h */; };
+		CF11086C083CD34E00220F54 /* AutoMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1338B5066F6B95009CC735 /* AutoMonitor.h */; };
+		CF11086E083CD34E00220F54 /* AutoMemoryScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = CF4F5B950692E09400AB276F /* AutoMemoryScanner.h */; };
+		CF11086F083CD34E00220F54 /* AutoInUseEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFCA2C3C06AD5A6D00E63F0B /* AutoInUseEnumerator.h */; };
+		CF110870083CD34E00220F54 /* CFSoftLinking.h in Headers */ = {isa = PBXBuildFile; fileRef = 39E38E7B08216865008941BD /* CFSoftLinking.h */; };
+		CF110872083CD34E00220F54 /* auto_zone.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A69FBAD028E2DA801004A08 /* auto_zone.h */; };
+		CF110874083CD34E00220F54 /* auto_zone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A69FBAC028E2DA801004A08 /* auto_zone.cpp */; };
+		CF110875083CD34E00220F54 /* auto_impl_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AA919B20300C0E501000040 /* auto_impl_utilities.c */; };
+		CF110877083CD34E00220F54 /* auto_weak.c in Sources */ = {isa = PBXBuildFile; fileRef = 83FE4345061E2E5A00AA5564 /* auto_weak.c */; };
+		CF110878083CD34E00220F54 /* AutoAdmin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9341906527D0300155736 /* AutoAdmin.cpp */; };
+		CF11087A083CD34E00220F54 /* AutoBitmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9341D06527D0300155736 /* AutoBitmap.cpp */; };
+		CF11087B083CD34E00220F54 /* AutoDefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9342006527D0300155736 /* AutoDefs.cpp */; };
+		CF11087C083CD34E00220F54 /* AutoEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9342206527D0300155736 /* AutoEnvironment.cpp */; };
+		CF11087D083CD34E00220F54 /* AutoHashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9342506527D0300155736 /* AutoHashTable.cpp */; };
+		CF11087E083CD34E00220F54 /* AutoLarge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9342806527D0300155736 /* AutoLarge.cpp */; };
+		CF110880083CD34E00220F54 /* AutoRegion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9343206527D0300155736 /* AutoRegion.cpp */; };
+		CF110881083CD34E00220F54 /* AutoSubzone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9343506527D0300155736 /* AutoSubzone.cpp */; };
+		CF110882083CD34E00220F54 /* AutoWriteBarrier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9343706527D0300155736 /* AutoWriteBarrier.cpp */; };
+		CF110883083CD34E00220F54 /* AutoZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9343906527D0300155736 /* AutoZone.cpp */; };
+		CF110884083CD34E00220F54 /* agc_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFBF701A0653D3E100EC4BD2 /* agc_interface.cpp */; };
+		CF110885083CD34E00220F54 /* AutoCollector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC8E7A8065AE1300071E64C /* AutoCollector.cpp */; };
+		CF110886083CD34E00220F54 /* AutoThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC4A182065C26FA0085433E /* AutoThread.cpp */; };
+		CF110887083CD34E00220F54 /* AutoMonitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF1338B6066F6B95009CC735 /* AutoMonitor.cpp */; };
+		CF110888083CD34E00220F54 /* AutoMemoryScanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF4F5B960692E09400AB276F /* AutoMemoryScanner.cpp */; };
+		CF110889083CD34E00220F54 /* AutoInUseEnumerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFCA2C3D06AD5A6D00E63F0B /* AutoInUseEnumerator.cpp */; };
+		CF11088A083CD34E00220F54 /* CFSoftLinking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39E38E7C08216865008941BD /* CFSoftLinking.cpp */; };
+		CF11088C083CD34E00220F54 /* System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF201BE706958ADD007E1DAD /* System.framework */; };
+		CF1338B7066F6B95009CC735 /* AutoMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1338B5066F6B95009CC735 /* AutoMonitor.h */; };
+		CF1338B8066F6B95009CC735 /* AutoMonitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF1338B6066F6B95009CC735 /* AutoMonitor.cpp */; };
+		CF201BE806958ADD007E1DAD /* System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF201BE706958ADD007E1DAD /* System.framework */; };
+		CF201BEA06958ADD007E1DAD /* System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF201BE706958ADD007E1DAD /* System.framework */; };
+		CF4F5B970692E09400AB276F /* AutoMemoryScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = CF4F5B950692E09400AB276F /* AutoMemoryScanner.h */; };
+		CF4F5B980692E09400AB276F /* AutoMemoryScanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF4F5B960692E09400AB276F /* AutoMemoryScanner.cpp */; };
+		CF4F5B9B0692E09400AB276F /* AutoMemoryScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = CF4F5B950692E09400AB276F /* AutoMemoryScanner.h */; };
+		CF4F5B9C0692E09400AB276F /* AutoMemoryScanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF4F5B960692E09400AB276F /* AutoMemoryScanner.cpp */; };
+		CFC3184C066F477A004CA32A /* auto_impl_utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF5C47802FDFEC301D56035 /* auto_impl_utilities.h */; };
+		CFC3184E066F477A004CA32A /* auto_weak.h in Headers */ = {isa = PBXBuildFile; fileRef = 83FE4346061E2E5A00AA5564 /* auto_weak.h */; };
+		CFC3184F066F477A004CA32A /* AutoAdmin.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9341A06527D0300155736 /* AutoAdmin.h */; };
+		CFC31851066F477A004CA32A /* AutoBitmap.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9341E06527D0300155736 /* AutoBitmap.h */; };
+		CFC31852066F477A004CA32A /* AutoConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9341F06527D0300155736 /* AutoConfiguration.h */; };
+		CFC31853066F477A004CA32A /* AutoDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342106527D0300155736 /* AutoDefs.h */; };
+		CFC31854066F477A004CA32A /* AutoEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342306527D0300155736 /* AutoEnvironment.h */; };
+		CFC31855066F477A004CA32A /* AutoHashList.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342406527D0300155736 /* AutoHashList.h */; };
+		CFC31856066F477A004CA32A /* AutoHashTable.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342606527D0300155736 /* AutoHashTable.h */; };
+		CFC31857066F477A004CA32A /* AutoLarge.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342906527D0300155736 /* AutoLarge.h */; };
+		CFC31859066F477A004CA32A /* AutoList.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342B06527D0300155736 /* AutoList.h */; };
+		CFC3185A066F477A004CA32A /* AutoListTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342C06527D0300155736 /* AutoListTypes.h */; };
+		CFC3185C066F477A004CA32A /* AutoLock.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342F06527D0300155736 /* AutoLock.h */; };
+		CFC3185D066F477A004CA32A /* AutoRange.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343006527D0300155736 /* AutoRange.h */; };
+		CFC3185F066F477A004CA32A /* AutoRegion.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343306527D0300155736 /* AutoRegion.h */; };
+		CFC31860066F477A004CA32A /* AutoStatistics.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343406527D0300155736 /* AutoStatistics.h */; };
+		CFC31861066F477A004CA32A /* AutoSubzone.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343606527D0300155736 /* AutoSubzone.h */; };
+		CFC31862066F477A004CA32A /* AutoWriteBarrier.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343806527D0300155736 /* AutoWriteBarrier.h */; };
+		CFC31863066F477A004CA32A /* AutoZone.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343A06527D0300155736 /* AutoZone.h */; };
+		CFC31866066F477A004CA32A /* agc_interface.h in Headers */ = {isa = PBXBuildFile; fileRef = CFBF70190653D3E100EC4BD2 /* agc_interface.h */; };
+		CFC31867066F477A004CA32A /* AutoAdminIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7A6065AE1300071E64C /* AutoAdminIterator.h */; };
+		CFC31868066F477A004CA32A /* AutoBlockIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7A7065AE1300071E64C /* AutoBlockIterator.h */; };
+		CFC31869066F477A004CA32A /* AutoCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7A9065AE1300071E64C /* AutoCollector.h */; };
+		CFC3186A066F477A004CA32A /* AutoRangeIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7AA065AE1300071E64C /* AutoRangeIterator.h */; };
+		CFC3186B066F477A004CA32A /* AutoSubzoneIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7AB065AE1300071E64C /* AutoSubzoneIterator.h */; };
+		CFC3186C066F477A004CA32A /* AutoWriteBarrierIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7AD065AE1300071E64C /* AutoWriteBarrierIterator.h */; };
+		CFC3186D066F477A004CA32A /* AutoThread.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC4A183065C26FA0085433E /* AutoThread.h */; };
+		CFC31873066F477A004CA32A /* auto_zone.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A69FBAD028E2DA801004A08 /* auto_zone.h */; };
+		CFC31875066F477A004CA32A /* auto_zone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A69FBAC028E2DA801004A08 /* auto_zone.cpp */; };
+		CFC31876066F477A004CA32A /* auto_impl_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AA919B20300C0E501000040 /* auto_impl_utilities.c */; };
+		CFC31878066F477A004CA32A /* auto_weak.c in Sources */ = {isa = PBXBuildFile; fileRef = 83FE4345061E2E5A00AA5564 /* auto_weak.c */; };
+		CFC31879066F477A004CA32A /* AutoAdmin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9341906527D0300155736 /* AutoAdmin.cpp */; };
+		CFC3187B066F477A004CA32A /* AutoBitmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9341D06527D0300155736 /* AutoBitmap.cpp */; };
+		CFC3187C066F477A004CA32A /* AutoDefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9342006527D0300155736 /* AutoDefs.cpp */; };
+		CFC3187D066F477A004CA32A /* AutoEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9342206527D0300155736 /* AutoEnvironment.cpp */; };
+		CFC3187E066F477A004CA32A /* AutoHashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9342506527D0300155736 /* AutoHashTable.cpp */; };
+		CFC3187F066F477A004CA32A /* AutoLarge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9342806527D0300155736 /* AutoLarge.cpp */; };
+		CFC31881066F477A004CA32A /* AutoRegion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9343206527D0300155736 /* AutoRegion.cpp */; };
+		CFC31882066F477A004CA32A /* AutoSubzone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9343506527D0300155736 /* AutoSubzone.cpp */; };
+		CFC31883066F477A004CA32A /* AutoWriteBarrier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9343706527D0300155736 /* AutoWriteBarrier.cpp */; };
+		CFC31884066F477A004CA32A /* AutoZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9343906527D0300155736 /* AutoZone.cpp */; };
+		CFC31885066F477A004CA32A /* agc_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFBF701A0653D3E100EC4BD2 /* agc_interface.cpp */; };
+		CFC31886066F477A004CA32A /* AutoCollector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC8E7A8065AE1300071E64C /* AutoCollector.cpp */; };
+		CFC31887066F477A004CA32A /* AutoThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC4A182065C26FA0085433E /* AutoThread.cpp */; };
+		CFCA2C4006AD5A6D00E63F0B /* AutoInUseEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFCA2C3C06AD5A6D00E63F0B /* AutoInUseEnumerator.h */; };
+		CFCA2C4106AD5A6D00E63F0B /* AutoInUseEnumerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFCA2C3D06AD5A6D00E63F0B /* AutoInUseEnumerator.cpp */; };
+		CFCA2C4206AD5A6D00E63F0B /* AutoInUseEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFCA2C3C06AD5A6D00E63F0B /* AutoInUseEnumerator.h */; };
+		CFCA2C4306AD5A6D00E63F0B /* AutoInUseEnumerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFCA2C3D06AD5A6D00E63F0B /* AutoInUseEnumerator.cpp */; };
+		CFCDE0C00675F6F700653421 /* auto_impl_utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF5C47802FDFEC301D56035 /* auto_impl_utilities.h */; };
+		CFCDE0C20675F6F700653421 /* auto_weak.h in Headers */ = {isa = PBXBuildFile; fileRef = 83FE4346061E2E5A00AA5564 /* auto_weak.h */; };
+		CFCDE0C30675F6F700653421 /* AutoAdmin.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9341A06527D0300155736 /* AutoAdmin.h */; };
+		CFCDE0C50675F6F700653421 /* AutoBitmap.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9341E06527D0300155736 /* AutoBitmap.h */; };
+		CFCDE0C60675F6F700653421 /* AutoConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9341F06527D0300155736 /* AutoConfiguration.h */; };
+		CFCDE0C70675F6F700653421 /* AutoDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342106527D0300155736 /* AutoDefs.h */; };
+		CFCDE0C80675F6F700653421 /* AutoEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342306527D0300155736 /* AutoEnvironment.h */; };
+		CFCDE0C90675F6F700653421 /* AutoHashList.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342406527D0300155736 /* AutoHashList.h */; };
+		CFCDE0CA0675F6F700653421 /* AutoHashTable.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342606527D0300155736 /* AutoHashTable.h */; };
+		CFCDE0CB0675F6F700653421 /* AutoLarge.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342906527D0300155736 /* AutoLarge.h */; };
+		CFCDE0CD0675F6F700653421 /* AutoList.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342B06527D0300155736 /* AutoList.h */; };
+		CFCDE0CE0675F6F700653421 /* AutoListTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342C06527D0300155736 /* AutoListTypes.h */; };
+		CFCDE0D00675F6F700653421 /* AutoLock.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9342F06527D0300155736 /* AutoLock.h */; };
+		CFCDE0D10675F6F700653421 /* AutoRange.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343006527D0300155736 /* AutoRange.h */; };
+		CFCDE0D30675F6F700653421 /* AutoRegion.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343306527D0300155736 /* AutoRegion.h */; };
+		CFCDE0D40675F6F700653421 /* AutoStatistics.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343406527D0300155736 /* AutoStatistics.h */; };
+		CFCDE0D50675F6F700653421 /* AutoSubzone.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343606527D0300155736 /* AutoSubzone.h */; };
+		CFCDE0D60675F6F700653421 /* AutoWriteBarrier.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343806527D0300155736 /* AutoWriteBarrier.h */; };
+		CFCDE0D70675F6F700653421 /* AutoZone.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9343A06527D0300155736 /* AutoZone.h */; };
+		CFCDE0DA0675F6F700653421 /* agc_interface.h in Headers */ = {isa = PBXBuildFile; fileRef = CFBF70190653D3E100EC4BD2 /* agc_interface.h */; };
+		CFCDE0DB0675F6F700653421 /* AutoAdminIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7A6065AE1300071E64C /* AutoAdminIterator.h */; };
+		CFCDE0DC0675F6F700653421 /* AutoBlockIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7A7065AE1300071E64C /* AutoBlockIterator.h */; };
+		CFCDE0DD0675F6F700653421 /* AutoCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7A9065AE1300071E64C /* AutoCollector.h */; };
+		CFCDE0DE0675F6F700653421 /* AutoRangeIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7AA065AE1300071E64C /* AutoRangeIterator.h */; };
+		CFCDE0DF0675F6F700653421 /* AutoSubzoneIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7AB065AE1300071E64C /* AutoSubzoneIterator.h */; };
+		CFCDE0E00675F6F700653421 /* AutoWriteBarrierIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC8E7AD065AE1300071E64C /* AutoWriteBarrierIterator.h */; };
+		CFCDE0E10675F6F700653421 /* AutoThread.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC4A183065C26FA0085433E /* AutoThread.h */; };
+		CFCDE0E50675F6F700653421 /* AutoMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1338B5066F6B95009CC735 /* AutoMonitor.h */; };
+		CFCDE0E80675F6F700653421 /* auto_zone.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A69FBAD028E2DA801004A08 /* auto_zone.h */; };
+		CFCDE0EA0675F6F700653421 /* auto_zone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A69FBAC028E2DA801004A08 /* auto_zone.cpp */; };
+		CFCDE0EB0675F6F700653421 /* auto_impl_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AA919B20300C0E501000040 /* auto_impl_utilities.c */; };
+		CFCDE0ED0675F6F700653421 /* auto_weak.c in Sources */ = {isa = PBXBuildFile; fileRef = 83FE4345061E2E5A00AA5564 /* auto_weak.c */; };
+		CFCDE0EE0675F6F700653421 /* AutoAdmin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9341906527D0300155736 /* AutoAdmin.cpp */; };
+		CFCDE0F00675F6F700653421 /* AutoBitmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9341D06527D0300155736 /* AutoBitmap.cpp */; };
+		CFCDE0F10675F6F700653421 /* AutoDefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9342006527D0300155736 /* AutoDefs.cpp */; };
+		CFCDE0F20675F6F700653421 /* AutoEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9342206527D0300155736 /* AutoEnvironment.cpp */; };
+		CFCDE0F30675F6F700653421 /* AutoHashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9342506527D0300155736 /* AutoHashTable.cpp */; };
+		CFCDE0F40675F6F700653421 /* AutoLarge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9342806527D0300155736 /* AutoLarge.cpp */; };
+		CFCDE0F60675F6F700653421 /* AutoRegion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9343206527D0300155736 /* AutoRegion.cpp */; };
+		CFCDE0F70675F6F700653421 /* AutoSubzone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9343506527D0300155736 /* AutoSubzone.cpp */; };
+		CFCDE0F80675F6F700653421 /* AutoWriteBarrier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9343706527D0300155736 /* AutoWriteBarrier.cpp */; };
+		CFCDE0F90675F6F700653421 /* AutoZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC9343906527D0300155736 /* AutoZone.cpp */; };
+		CFCDE0FA0675F6F700653421 /* agc_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFBF701A0653D3E100EC4BD2 /* agc_interface.cpp */; };
+		CFCDE0FB0675F6F700653421 /* AutoCollector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC8E7A8065AE1300071E64C /* AutoCollector.cpp */; };
+		CFCDE0FC0675F6F700653421 /* AutoThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC4A182065C26FA0085433E /* AutoThread.cpp */; };
+		CFCDE0FD0675F6F700653421 /* AutoMonitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF1338B6066F6B95009CC735 /* AutoMonitor.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF110871083CD34E00220F54 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = /usr/local/include;
+			dstSubfolderSpec = 0;
+			files = (
+				CF110872083CD34E00220F54 /* auto_zone.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC31872066F477A004CA32A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/local/include;
+			dstSubfolderSpec = 0;
+			files = (
+				CFC31873066F477A004CA32A /* auto_zone.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		CFCDE0E70675F6F700653421 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = /usr/local/include;
+			dstSubfolderSpec = 0;
+			files = (
+				CFCDE0E80675F6F700653421 /* auto_zone.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A69FBAC028E2DA801004A08 /* auto_zone.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = auto_zone.cpp; sourceTree = "<group>"; };
+		0A69FBAD028E2DA801004A08 /* auto_zone.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = auto_zone.h; sourceTree = "<group>"; };
+		0AA919B20300C0E501000040 /* auto_impl_utilities.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = auto_impl_utilities.c; sourceTree = "<group>"; };
+		0AA919B403010BAA01000040 /* malloc_test.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = malloc_test.c; sourceTree = "<group>"; };
+		0AA919B503010BAA01000040 /* malloc_test.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = malloc_test.h; sourceTree = "<group>"; };
+		0AF5C47802FDFEC301D56035 /* auto_impl_utilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = auto_impl_utilities.h; sourceTree = "<group>"; };
+		3907B1820B7912D60042CA69 /* AutoRootScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoRootScanner.h; sourceTree = "<group>"; };
+		399C6D830B780962006686B9 /* auto_gdb_interface.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = auto_gdb_interface.h; sourceTree = "<group>"; };
+		399C6D950B780B0D006686B9 /* auto_gdb_interface.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = auto_gdb_interface.cpp; sourceTree = "<group>"; };
+		39B377710A5905A300AEEF7C /* auto_trace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auto_trace.h; sourceTree = "<group>"; };
+		39B377720A5905A300AEEF7C /* auto_trace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auto_trace.c; sourceTree = "<group>"; };
+		39D2F8F40B3C5F83005F3C78 /* test_bitmaps */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test_bitmaps; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D2F90F0B3C6007005F3C78 /* test_bitmaps.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = test_bitmaps.cpp; sourceTree = "<group>"; };
+		39E38E7B08216865008941BD /* CFSoftLinking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFSoftLinking.h; sourceTree = "<group>"; };
+		39E38E7C08216865008941BD /* CFSoftLinking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CFSoftLinking.cpp; sourceTree = "<group>"; };
+		83FE4345061E2E5A00AA5564 /* auto_weak.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = auto_weak.c; sourceTree = "<group>"; };
+		83FE4346061E2E5A00AA5564 /* auto_weak.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = auto_weak.h; sourceTree = "<group>"; };
+		CF11088E083CD34E00220F54 /* libauto.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libauto.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1338B5066F6B95009CC735 /* AutoMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoMonitor.h; sourceTree = SOURCE_ROOT; };
+		CF1338B6066F6B95009CC735 /* AutoMonitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoMonitor.cpp; sourceTree = SOURCE_ROOT; };
+		CF201BE706958ADD007E1DAD /* System.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = System.framework; path = /System/Library/Frameworks/System.framework; sourceTree = "<absolute>"; };
+		CF4F5B950692E09400AB276F /* AutoMemoryScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoMemoryScanner.h; sourceTree = "<group>"; };
+		CF4F5B960692E09400AB276F /* AutoMemoryScanner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoMemoryScanner.cpp; sourceTree = "<group>"; };
+		CFBF70190653D3E100EC4BD2 /* agc_interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_interface.h; sourceTree = "<group>"; };
+		CFBF701A0653D3E100EC4BD2 /* agc_interface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = agc_interface.cpp; sourceTree = "<group>"; };
+		CFC3188B066F477A004CA32A /* libauto.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libauto.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC4A182065C26FA0085433E /* AutoThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoThread.cpp; sourceTree = "<group>"; };
+		CFC4A183065C26FA0085433E /* AutoThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoThread.h; sourceTree = "<group>"; };
+		CFC8E7A6065AE1300071E64C /* AutoAdminIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoAdminIterator.h; sourceTree = "<group>"; };
+		CFC8E7A7065AE1300071E64C /* AutoBlockIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoBlockIterator.h; sourceTree = "<group>"; };
+		CFC8E7A8065AE1300071E64C /* AutoCollector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoCollector.cpp; sourceTree = "<group>"; };
+		CFC8E7A9065AE1300071E64C /* AutoCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCollector.h; sourceTree = "<group>"; };
+		CFC8E7AA065AE1300071E64C /* AutoRangeIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoRangeIterator.h; sourceTree = "<group>"; };
+		CFC8E7AB065AE1300071E64C /* AutoSubzoneIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoSubzoneIterator.h; sourceTree = "<group>"; };
+		CFC8E7AD065AE1300071E64C /* AutoWriteBarrierIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoWriteBarrierIterator.h; sourceTree = "<group>"; };
+		CFC9341906527D0300155736 /* AutoAdmin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoAdmin.cpp; sourceTree = "<group>"; };
+		CFC9341A06527D0300155736 /* AutoAdmin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoAdmin.h; sourceTree = "<group>"; };
+		CFC9341D06527D0300155736 /* AutoBitmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoBitmap.cpp; sourceTree = "<group>"; };
+		CFC9341E06527D0300155736 /* AutoBitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoBitmap.h; sourceTree = "<group>"; };
+		CFC9341F06527D0300155736 /* AutoConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoConfiguration.h; sourceTree = "<group>"; };
+		CFC9342006527D0300155736 /* AutoDefs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoDefs.cpp; sourceTree = "<group>"; };
+		CFC9342106527D0300155736 /* AutoDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoDefs.h; sourceTree = "<group>"; };
+		CFC9342206527D0300155736 /* AutoEnvironment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoEnvironment.cpp; sourceTree = "<group>"; };
+		CFC9342306527D0300155736 /* AutoEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoEnvironment.h; sourceTree = "<group>"; };
+		CFC9342406527D0300155736 /* AutoHashList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoHashList.h; sourceTree = "<group>"; };
+		CFC9342506527D0300155736 /* AutoHashTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoHashTable.cpp; sourceTree = "<group>"; };
+		CFC9342606527D0300155736 /* AutoHashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoHashTable.h; sourceTree = "<group>"; };
+		CFC9342806527D0300155736 /* AutoLarge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoLarge.cpp; sourceTree = "<group>"; };
+		CFC9342906527D0300155736 /* AutoLarge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLarge.h; sourceTree = "<group>"; };
+		CFC9342B06527D0300155736 /* AutoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoList.h; sourceTree = "<group>"; };
+		CFC9342C06527D0300155736 /* AutoListTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoListTypes.h; sourceTree = "<group>"; };
+		CFC9342F06527D0300155736 /* AutoLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLock.h; sourceTree = "<group>"; };
+		CFC9343006527D0300155736 /* AutoRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoRange.h; sourceTree = "<group>"; };
+		CFC9343206527D0300155736 /* AutoRegion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoRegion.cpp; sourceTree = "<group>"; };
+		CFC9343306527D0300155736 /* AutoRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoRegion.h; sourceTree = "<group>"; };
+		CFC9343406527D0300155736 /* AutoStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoStatistics.h; sourceTree = "<group>"; };
+		CFC9343506527D0300155736 /* AutoSubzone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoSubzone.cpp; sourceTree = "<group>"; };
+		CFC9343606527D0300155736 /* AutoSubzone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoSubzone.h; sourceTree = "<group>"; };
+		CFC9343706527D0300155736 /* AutoWriteBarrier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoWriteBarrier.cpp; sourceTree = "<group>"; };
+		CFC9343806527D0300155736 /* AutoWriteBarrier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoWriteBarrier.h; sourceTree = "<group>"; };
+		CFC9343906527D0300155736 /* AutoZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoZone.cpp; sourceTree = "<group>"; };
+		CFC9343A06527D0300155736 /* AutoZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoZone.h; sourceTree = "<group>"; };
+		CFCA2C3C06AD5A6D00E63F0B /* AutoInUseEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoInUseEnumerator.h; sourceTree = "<group>"; };
+		CFCA2C3D06AD5A6D00E63F0B /* AutoInUseEnumerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoInUseEnumerator.cpp; sourceTree = "<group>"; };
+		CFCDE1000675F6F700653421 /* libauto.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libauto.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1EA00460332A2FE05000103 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		F1F3104C039BF34B05C918AB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39D2F8F20B3C5F83005F3C78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF11088B083CD34E00220F54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF11088C083CD34E00220F54 /* System.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC31888066F477A004CA32A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF201BE806958ADD007E1DAD /* System.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCDE0FE0675F6F700653421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF201BEA06958ADD007E1DAD /* System.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* auto */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = auto;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				39FCF8560A7170240005745A /* tests */,
+				83FE4345061E2E5A00AA5564 /* auto_weak.c */,
+				83FE4346061E2E5A00AA5564 /* auto_weak.h */,
+				0A69FBAC028E2DA801004A08 /* auto_zone.cpp */,
+				0A69FBAD028E2DA801004A08 /* auto_zone.h */,
+				0AF5C47802FDFEC301D56035 /* auto_impl_utilities.h */,
+				0AA919B20300C0E501000040 /* auto_impl_utilities.c */,
+				0AA919B503010BAA01000040 /* malloc_test.h */,
+				0AA919B403010BAA01000040 /* malloc_test.c */,
+				39B377720A5905A300AEEF7C /* auto_trace.c */,
+				39B377710A5905A300AEEF7C /* auto_trace.h */,
+				CFBF701A0653D3E100EC4BD2 /* agc_interface.cpp */,
+				CFBF70190653D3E100EC4BD2 /* agc_interface.h */,
+				399C6D950B780B0D006686B9 /* auto_gdb_interface.cpp */,
+				399C6D830B780962006686B9 /* auto_gdb_interface.h */,
+				CFC9341906527D0300155736 /* AutoAdmin.cpp */,
+				CFC9341A06527D0300155736 /* AutoAdmin.h */,
+				CFC8E7A6065AE1300071E64C /* AutoAdminIterator.h */,
+				CFC9341D06527D0300155736 /* AutoBitmap.cpp */,
+				CFC9341E06527D0300155736 /* AutoBitmap.h */,
+				CFC8E7A7065AE1300071E64C /* AutoBlockIterator.h */,
+				CFC8E7A8065AE1300071E64C /* AutoCollector.cpp */,
+				CFC8E7A9065AE1300071E64C /* AutoCollector.h */,
+				CFC9341F06527D0300155736 /* AutoConfiguration.h */,
+				CFC9342106527D0300155736 /* AutoDefs.h */,
+				CFC9342006527D0300155736 /* AutoDefs.cpp */,
+				CFC9342206527D0300155736 /* AutoEnvironment.cpp */,
+				CFC9342306527D0300155736 /* AutoEnvironment.h */,
+				CFC9342406527D0300155736 /* AutoHashList.h */,
+				CFC9342506527D0300155736 /* AutoHashTable.cpp */,
+				CFC9342606527D0300155736 /* AutoHashTable.h */,
+				CFCA2C3D06AD5A6D00E63F0B /* AutoInUseEnumerator.cpp */,
+				CFCA2C3C06AD5A6D00E63F0B /* AutoInUseEnumerator.h */,
+				CFC9342806527D0300155736 /* AutoLarge.cpp */,
+				CFC9342906527D0300155736 /* AutoLarge.h */,
+				CFC9342B06527D0300155736 /* AutoList.h */,
+				CFC9342C06527D0300155736 /* AutoListTypes.h */,
+				CFC9342F06527D0300155736 /* AutoLock.h */,
+				CF4F5B960692E09400AB276F /* AutoMemoryScanner.cpp */,
+				CF4F5B950692E09400AB276F /* AutoMemoryScanner.h */,
+				CF1338B6066F6B95009CC735 /* AutoMonitor.cpp */,
+				CF1338B5066F6B95009CC735 /* AutoMonitor.h */,
+				CFC9343006527D0300155736 /* AutoRange.h */,
+				CFC8E7AA065AE1300071E64C /* AutoRangeIterator.h */,
+				CFC9343206527D0300155736 /* AutoRegion.cpp */,
+				CFC9343306527D0300155736 /* AutoRegion.h */,
+				3907B1820B7912D60042CA69 /* AutoRootScanner.h */,
+				CFC9343406527D0300155736 /* AutoStatistics.h */,
+				CFC9343506527D0300155736 /* AutoSubzone.cpp */,
+				CFC9343606527D0300155736 /* AutoSubzone.h */,
+				CFC8E7AB065AE1300071E64C /* AutoSubzoneIterator.h */,
+				CFC4A182065C26FA0085433E /* AutoThread.cpp */,
+				CFC4A183065C26FA0085433E /* AutoThread.h */,
+				CFC9343706527D0300155736 /* AutoWriteBarrier.cpp */,
+				CFC9343806527D0300155736 /* AutoWriteBarrier.h */,
+				CFC8E7AD065AE1300071E64C /* AutoWriteBarrierIterator.h */,
+				CFC9343906527D0300155736 /* AutoZone.cpp */,
+				CFC9343A06527D0300155736 /* AutoZone.h */,
+				39E38E7B08216865008941BD /* CFSoftLinking.h */,
+				39E38E7C08216865008941BD /* CFSoftLinking.cpp */,
+				F1EA00460332A2FE05000103 /* Foundation.framework */,
+				F1F3104C039BF34B05C918AB /* CoreFoundation.framework */,
+				CF201BE706958ADD007E1DAD /* System.framework */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFC3188B066F477A004CA32A /* libauto.dylib */,
+				CFCDE1000675F6F700653421 /* libauto.dylib */,
+				CF11088E083CD34E00220F54 /* libauto.dylib */,
+				39D2F8F40B3C5F83005F3C78 /* test_bitmaps */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39FCF8560A7170240005745A /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				39D2F90F0B3C6007005F3C78 /* test_bitmaps.cpp */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CF110848083CD34E00220F54 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF110849083CD34E00220F54 /* auto_impl_utilities.h in Headers */,
+				CF11084B083CD34E00220F54 /* auto_weak.h in Headers */,
+				CF11084C083CD34E00220F54 /* AutoAdmin.h in Headers */,
+				CF11084E083CD34E00220F54 /* AutoBitmap.h in Headers */,
+				CF11084F083CD34E00220F54 /* AutoConfiguration.h in Headers */,
+				CF110850083CD34E00220F54 /* AutoDefs.h in Headers */,
+				CF110851083CD34E00220F54 /* AutoEnvironment.h in Headers */,
+				CF110852083CD34E00220F54 /* AutoHashList.h in Headers */,
+				CF110853083CD34E00220F54 /* AutoHashTable.h in Headers */,
+				CF110854083CD34E00220F54 /* AutoLarge.h in Headers */,
+				CF110856083CD34E00220F54 /* AutoList.h in Headers */,
+				CF110857083CD34E00220F54 /* AutoListTypes.h in Headers */,
+				CF110858083CD34E00220F54 /* AutoLock.h in Headers */,
+				CF110859083CD34E00220F54 /* AutoRange.h in Headers */,
+				CF11085B083CD34E00220F54 /* AutoRegion.h in Headers */,
+				CF11085C083CD34E00220F54 /* AutoStatistics.h in Headers */,
+				CF11085D083CD34E00220F54 /* AutoSubzone.h in Headers */,
+				CF11085E083CD34E00220F54 /* AutoWriteBarrier.h in Headers */,
+				CF11085F083CD34E00220F54 /* AutoZone.h in Headers */,
+				CF110861083CD34E00220F54 /* agc_interface.h in Headers */,
+				CF110862083CD34E00220F54 /* AutoAdminIterator.h in Headers */,
+				CF110863083CD34E00220F54 /* AutoBlockIterator.h in Headers */,
+				CF110864083CD34E00220F54 /* AutoCollector.h in Headers */,
+				CF110865083CD34E00220F54 /* AutoRangeIterator.h in Headers */,
+				CF110866083CD34E00220F54 /* AutoSubzoneIterator.h in Headers */,
+				CF110867083CD34E00220F54 /* AutoWriteBarrierIterator.h in Headers */,
+				CF110868083CD34E00220F54 /* AutoThread.h in Headers */,
+				CF11086C083CD34E00220F54 /* AutoMonitor.h in Headers */,
+				CF11086E083CD34E00220F54 /* AutoMemoryScanner.h in Headers */,
+				CF11086F083CD34E00220F54 /* AutoInUseEnumerator.h in Headers */,
+				CF110870083CD34E00220F54 /* CFSoftLinking.h in Headers */,
+				39B377750A5905A300AEEF7C /* auto_trace.h in Headers */,
+				399C6D860B780962006686B9 /* auto_gdb_interface.h in Headers */,
+				3907B1880B7912D60042CA69 /* AutoRootScanner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC3184B066F477A004CA32A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC3184C066F477A004CA32A /* auto_impl_utilities.h in Headers */,
+				CFC3184E066F477A004CA32A /* auto_weak.h in Headers */,
+				CFC3184F066F477A004CA32A /* AutoAdmin.h in Headers */,
+				CFC31851066F477A004CA32A /* AutoBitmap.h in Headers */,
+				CFC31852066F477A004CA32A /* AutoConfiguration.h in Headers */,
+				CFC31853066F477A004CA32A /* AutoDefs.h in Headers */,
+				CFC31854066F477A004CA32A /* AutoEnvironment.h in Headers */,
+				CFC31855066F477A004CA32A /* AutoHashList.h in Headers */,
+				CFC31856066F477A004CA32A /* AutoHashTable.h in Headers */,
+				CFC31857066F477A004CA32A /* AutoLarge.h in Headers */,
+				CFC31859066F477A004CA32A /* AutoList.h in Headers */,
+				CFC3185A066F477A004CA32A /* AutoListTypes.h in Headers */,
+				CFC3185C066F477A004CA32A /* AutoLock.h in Headers */,
+				CFC3185D066F477A004CA32A /* AutoRange.h in Headers */,
+				CFC3185F066F477A004CA32A /* AutoRegion.h in Headers */,
+				CFC31860066F477A004CA32A /* AutoStatistics.h in Headers */,
+				CFC31861066F477A004CA32A /* AutoSubzone.h in Headers */,
+				CFC31862066F477A004CA32A /* AutoWriteBarrier.h in Headers */,
+				CFC31863066F477A004CA32A /* AutoZone.h in Headers */,
+				CFC31866066F477A004CA32A /* agc_interface.h in Headers */,
+				CFC31867066F477A004CA32A /* AutoAdminIterator.h in Headers */,
+				CFC31868066F477A004CA32A /* AutoBlockIterator.h in Headers */,
+				CFC31869066F477A004CA32A /* AutoCollector.h in Headers */,
+				CFC3186A066F477A004CA32A /* AutoRangeIterator.h in Headers */,
+				CFC3186B066F477A004CA32A /* AutoSubzoneIterator.h in Headers */,
+				CFC3186C066F477A004CA32A /* AutoWriteBarrierIterator.h in Headers */,
+				CFC3186D066F477A004CA32A /* AutoThread.h in Headers */,
+				CF1338B7066F6B95009CC735 /* AutoMonitor.h in Headers */,
+				CF4F5B970692E09400AB276F /* AutoMemoryScanner.h in Headers */,
+				CFCA2C4006AD5A6D00E63F0B /* AutoInUseEnumerator.h in Headers */,
+				39E38E7D08216865008941BD /* CFSoftLinking.h in Headers */,
+				39B377730A5905A300AEEF7C /* auto_trace.h in Headers */,
+				399C6D840B780962006686B9 /* auto_gdb_interface.h in Headers */,
+				3907B1860B7912D60042CA69 /* AutoRootScanner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCDE0BF0675F6F700653421 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCDE0C00675F6F700653421 /* auto_impl_utilities.h in Headers */,
+				CFCDE0C20675F6F700653421 /* auto_weak.h in Headers */,
+				CFCDE0C30675F6F700653421 /* AutoAdmin.h in Headers */,
+				CFCDE0C50675F6F700653421 /* AutoBitmap.h in Headers */,
+				CFCDE0C60675F6F700653421 /* AutoConfiguration.h in Headers */,
+				CFCDE0C70675F6F700653421 /* AutoDefs.h in Headers */,
+				CFCDE0C80675F6F700653421 /* AutoEnvironment.h in Headers */,
+				CFCDE0C90675F6F700653421 /* AutoHashList.h in Headers */,
+				CFCDE0CA0675F6F700653421 /* AutoHashTable.h in Headers */,
+				CFCDE0CB0675F6F700653421 /* AutoLarge.h in Headers */,
+				CFCDE0CD0675F6F700653421 /* AutoList.h in Headers */,
+				CFCDE0CE0675F6F700653421 /* AutoListTypes.h in Headers */,
+				CFCDE0D00675F6F700653421 /* AutoLock.h in Headers */,
+				CFCDE0D10675F6F700653421 /* AutoRange.h in Headers */,
+				CFCDE0D30675F6F700653421 /* AutoRegion.h in Headers */,
+				CFCDE0D40675F6F700653421 /* AutoStatistics.h in Headers */,
+				CFCDE0D50675F6F700653421 /* AutoSubzone.h in Headers */,
+				CFCDE0D60675F6F700653421 /* AutoWriteBarrier.h in Headers */,
+				CFCDE0D70675F6F700653421 /* AutoZone.h in Headers */,
+				CFCDE0DA0675F6F700653421 /* agc_interface.h in Headers */,
+				CFCDE0DB0675F6F700653421 /* AutoAdminIterator.h in Headers */,
+				CFCDE0DC0675F6F700653421 /* AutoBlockIterator.h in Headers */,
+				CFCDE0DD0675F6F700653421 /* AutoCollector.h in Headers */,
+				CFCDE0DE0675F6F700653421 /* AutoRangeIterator.h in Headers */,
+				CFCDE0DF0675F6F700653421 /* AutoSubzoneIterator.h in Headers */,
+				CFCDE0E00675F6F700653421 /* AutoWriteBarrierIterator.h in Headers */,
+				CFCDE0E10675F6F700653421 /* AutoThread.h in Headers */,
+				CFCDE0E50675F6F700653421 /* AutoMonitor.h in Headers */,
+				CF4F5B9B0692E09400AB276F /* AutoMemoryScanner.h in Headers */,
+				CFCA2C4206AD5A6D00E63F0B /* AutoInUseEnumerator.h in Headers */,
+				39E38E7F08216865008941BD /* CFSoftLinking.h in Headers */,
+				39B377790A5905A300AEEF7C /* auto_trace.h in Headers */,
+				399C6D850B780962006686B9 /* auto_gdb_interface.h in Headers */,
+				3907B1840B7912D60042CA69 /* AutoRootScanner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		39D2F8F30B3C5F83005F3C78 /* test_bitmaps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39D2F9060B3C5FAC005F3C78 /* Build configuration list for PBXNativeTarget "test_bitmaps" */;
+			buildPhases = (
+				39D2F8F10B3C5F83005F3C78 /* Sources */,
+				39D2F8F20B3C5F83005F3C78 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test_bitmaps;
+			productName = test_bitmaps;
+			productReference = 39D2F8F40B3C5F83005F3C78 /* test_bitmaps */;
+			productType = "com.apple.product-type.tool";
+		};
+		CF110847083CD34E00220F54 /* autodylib nodebug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39B520020957B18600E999B7 /* Build configuration list for PBXNativeTarget "autodylib nodebug" */;
+			buildPhases = (
+				CF110848083CD34E00220F54 /* Headers */,
+				CF110871083CD34E00220F54 /* CopyFiles */,
+				CF110873083CD34E00220F54 /* Sources */,
+				CF11088B083CD34E00220F54 /* Frameworks */,
+				CF11088D083CD34E00220F54 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "autodylib nodebug";
+			productInstallPath = /usr/lib;
+			productName = autodylib;
+			productReference = CF11088E083CD34E00220F54 /* libauto.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		CFC3184A066F477A004CA32A /* autodylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39B51FF60957B18600E999B7 /* Build configuration list for PBXNativeTarget "autodylib" */;
+			buildPhases = (
+				CFC3184B066F477A004CA32A /* Headers */,
+				CFC31872066F477A004CA32A /* CopyFiles */,
+				CFC31874066F477A004CA32A /* Sources */,
+				CFC31888066F477A004CA32A /* Frameworks */,
+				CFC31889066F477A004CA32A /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = autodylib;
+			productInstallPath = /usr/lib;
+			productName = autodylib;
+			productReference = CFC3188B066F477A004CA32A /* libauto.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		CFCDE0BE0675F6F700653421 /* autodylib debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39B51FFA0957B18600E999B7 /* Build configuration list for PBXNativeTarget "autodylib debug" */;
+			buildPhases = (
+				CFCDE0BF0675F6F700653421 /* Headers */,
+				CFCDE0E70675F6F700653421 /* CopyFiles */,
+				CFCDE0E90675F6F700653421 /* Sources */,
+				CFCDE0FE0675F6F700653421 /* Frameworks */,
+				CFCDE0FF0675F6F700653421 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "autodylib debug";
+			productInstallPath = /usr/lib;
+			productName = autodylib;
+			productReference = CFCDE1000675F6F700653421 /* libauto.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 39B520060957B18600E999B7 /* Build configuration list for PBXProject "auto" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* auto */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFC3184A066F477A004CA32A /* autodylib */,
+				CFCDE0BE0675F6F700653421 /* autodylib debug */,
+				CF110847083CD34E00220F54 /* autodylib nodebug */,
+				39D2F8F30B3C5F83005F3C78 /* test_bitmaps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXRezBuildPhase section */
+		CF11088D083CD34E00220F54 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC31889066F477A004CA32A /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCDE0FF0675F6F700653421 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39D2F8F10B3C5F83005F3C78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D2F9100B3C6007005F3C78 /* test_bitmaps.cpp in Sources */,
+				39D2F9570B3C6BD4005F3C78 /* AutoBitmap.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF110873083CD34E00220F54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF110874083CD34E00220F54 /* auto_zone.cpp in Sources */,
+				CF110875083CD34E00220F54 /* auto_impl_utilities.c in Sources */,
+				CF110877083CD34E00220F54 /* auto_weak.c in Sources */,
+				CF110878083CD34E00220F54 /* AutoAdmin.cpp in Sources */,
+				CF11087A083CD34E00220F54 /* AutoBitmap.cpp in Sources */,
+				CF11087B083CD34E00220F54 /* AutoDefs.cpp in Sources */,
+				CF11087C083CD34E00220F54 /* AutoEnvironment.cpp in Sources */,
+				CF11087D083CD34E00220F54 /* AutoHashTable.cpp in Sources */,
+				CF11087E083CD34E00220F54 /* AutoLarge.cpp in Sources */,
+				CF110880083CD34E00220F54 /* AutoRegion.cpp in Sources */,
+				CF110881083CD34E00220F54 /* AutoSubzone.cpp in Sources */,
+				CF110882083CD34E00220F54 /* AutoWriteBarrier.cpp in Sources */,
+				CF110883083CD34E00220F54 /* AutoZone.cpp in Sources */,
+				CF110884083CD34E00220F54 /* agc_interface.cpp in Sources */,
+				CF110885083CD34E00220F54 /* AutoCollector.cpp in Sources */,
+				CF110886083CD34E00220F54 /* AutoThread.cpp in Sources */,
+				CF110887083CD34E00220F54 /* AutoMonitor.cpp in Sources */,
+				CF110888083CD34E00220F54 /* AutoMemoryScanner.cpp in Sources */,
+				CF110889083CD34E00220F54 /* AutoInUseEnumerator.cpp in Sources */,
+				CF11088A083CD34E00220F54 /* CFSoftLinking.cpp in Sources */,
+				39B377760A5905A300AEEF7C /* auto_trace.c in Sources */,
+				399C6D980B780B0D006686B9 /* auto_gdb_interface.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC31874066F477A004CA32A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC31875066F477A004CA32A /* auto_zone.cpp in Sources */,
+				CFC31876066F477A004CA32A /* auto_impl_utilities.c in Sources */,
+				CFC31878066F477A004CA32A /* auto_weak.c in Sources */,
+				CFC31879066F477A004CA32A /* AutoAdmin.cpp in Sources */,
+				CFC3187B066F477A004CA32A /* AutoBitmap.cpp in Sources */,
+				CFC3187C066F477A004CA32A /* AutoDefs.cpp in Sources */,
+				CFC3187D066F477A004CA32A /* AutoEnvironment.cpp in Sources */,
+				CFC3187E066F477A004CA32A /* AutoHashTable.cpp in Sources */,
+				CFC3187F066F477A004CA32A /* AutoLarge.cpp in Sources */,
+				CFC31881066F477A004CA32A /* AutoRegion.cpp in Sources */,
+				CFC31882066F477A004CA32A /* AutoSubzone.cpp in Sources */,
+				CFC31883066F477A004CA32A /* AutoWriteBarrier.cpp in Sources */,
+				CFC31884066F477A004CA32A /* AutoZone.cpp in Sources */,
+				CFC31885066F477A004CA32A /* agc_interface.cpp in Sources */,
+				CFC31886066F477A004CA32A /* AutoCollector.cpp in Sources */,
+				CFC31887066F477A004CA32A /* AutoThread.cpp in Sources */,
+				CF1338B8066F6B95009CC735 /* AutoMonitor.cpp in Sources */,
+				CF4F5B980692E09400AB276F /* AutoMemoryScanner.cpp in Sources */,
+				CFCA2C4106AD5A6D00E63F0B /* AutoInUseEnumerator.cpp in Sources */,
+				39E38E7E08216865008941BD /* CFSoftLinking.cpp in Sources */,
+				39B377740A5905A300AEEF7C /* auto_trace.c in Sources */,
+				399C6D960B780B0D006686B9 /* auto_gdb_interface.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCDE0E90675F6F700653421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCDE0EA0675F6F700653421 /* auto_zone.cpp in Sources */,
+				CFCDE0EB0675F6F700653421 /* auto_impl_utilities.c in Sources */,
+				CFCDE0ED0675F6F700653421 /* auto_weak.c in Sources */,
+				CFCDE0EE0675F6F700653421 /* AutoAdmin.cpp in Sources */,
+				CFCDE0F00675F6F700653421 /* AutoBitmap.cpp in Sources */,
+				CFCDE0F10675F6F700653421 /* AutoDefs.cpp in Sources */,
+				CFCDE0F20675F6F700653421 /* AutoEnvironment.cpp in Sources */,
+				CFCDE0F30675F6F700653421 /* AutoHashTable.cpp in Sources */,
+				CFCDE0F40675F6F700653421 /* AutoLarge.cpp in Sources */,
+				CFCDE0F60675F6F700653421 /* AutoRegion.cpp in Sources */,
+				CFCDE0F70675F6F700653421 /* AutoSubzone.cpp in Sources */,
+				CFCDE0F80675F6F700653421 /* AutoWriteBarrier.cpp in Sources */,
+				CFCDE0F90675F6F700653421 /* AutoZone.cpp in Sources */,
+				CFCDE0FA0675F6F700653421 /* agc_interface.cpp in Sources */,
+				CFCDE0FB0675F6F700653421 /* AutoCollector.cpp in Sources */,
+				CFCDE0FC0675F6F700653421 /* AutoThread.cpp in Sources */,
+				CFCDE0FD0675F6F700653421 /* AutoMonitor.cpp in Sources */,
+				CF4F5B9C0692E09400AB276F /* AutoMemoryScanner.cpp in Sources */,
+				CFCA2C4306AD5A6D00E63F0B /* AutoInUseEnumerator.cpp in Sources */,
+				39E38E8008216865008941BD /* CFSoftLinking.cpp in Sources */,
+				39B3777A0A5905A300AEEF7C /* auto_trace.c in Sources */,
+				399C6D970B780B0D006686B9 /* auto_gdb_interface.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		39B51FF70957B18600E999B7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXPORTED_SYMBOLS_FILE = auto_exports;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_STRICT_ALIASING = YES;
+				GCC_UNROLL_LOOPS = YES;
+				INSTALLHDRS_COPY_PHASE = YES;
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OPTIMIZATION_CFLAGS = "-O0 -g";
+				OTHER_CFLAGS = "-falign-loops=16";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libauto;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		39B51FF80957B18600E999B7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXPORTED_SYMBOLS_FILE = auto_exports;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_STRICT_ALIASING = YES;
+				GCC_UNROLL_LOOPS = YES;
+				INSTALLHDRS_COPY_PHASE = YES;
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = "-falign-loops=16";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = libauto;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		39B51FF90957B18600E999B7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXPORTED_SYMBOLS_FILE = auto_exports;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_STRICT_ALIASING = YES;
+				GCC_UNROLL_LOOPS = YES;
+				INSTALLHDRS_COPY_PHASE = YES;
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = "-falign-loops=16";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libauto;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		39B51FFB0957B18600E999B7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				INSTALLHDRS_COPY_PHASE = YES;
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OPTIMIZATION_CFLAGS = "-O0 -g";
+				OTHER_CFLAGS = "-falign-loops=16";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libauto;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		39B51FFC0957B18600E999B7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				INSTALLHDRS_COPY_PHASE = YES;
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = "-falign-loops=16";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = libauto;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		39B51FFD0957B18600E999B7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				INSTALLHDRS_COPY_PHASE = YES;
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = "-falign-loops=16";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libauto;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		39B520030957B18600E999B7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXPORTED_SYMBOLS_FILE = auto_exports;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_STRICT_ALIASING = YES;
+				GCC_UNROLL_LOOPS = YES;
+				INSTALLHDRS_COPY_PHASE = YES;
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OPTIMIZATION_CFLAGS = "-O0 -g";
+				OTHER_CFLAGS = "-falign-loops=16";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libauto;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		39B520040957B18600E999B7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXPORTED_SYMBOLS_FILE = auto_exports;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_STRICT_ALIASING = YES;
+				GCC_UNROLL_LOOPS = YES;
+				INSTALLHDRS_COPY_PHASE = YES;
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = "-falign-loops=16";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = libauto;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		39B520050957B18600E999B7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXPORTED_SYMBOLS_FILE = auto_exports;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_STRICT_ALIASING = YES;
+				GCC_UNROLL_LOOPS = YES;
+				INSTALLHDRS_COPY_PHASE = YES;
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = "-falign-loops=16";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libauto;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		39B520070957B18600E999B7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		39B520080957B18600E999B7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+					ppc64,
+					x86_64,
+				);
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Deployment;
+		};
+		39B520090957B18600E999B7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+			};
+			name = Default;
+		};
+		39D2F9070B3C5FAC005F3C78 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = test_bitmaps;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		39D2F9080B3C5FAC005F3C78 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = test_bitmaps;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		39D2F9090B3C5FAC005F3C78 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = test_bitmaps;
+				ZERO_LINK = YES;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39B51FF60957B18600E999B7 /* Build configuration list for PBXNativeTarget "autodylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B51FF70957B18600E999B7 /* Development */,
+				39B51FF80957B18600E999B7 /* Deployment */,
+				39B51FF90957B18600E999B7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		39B51FFA0957B18600E999B7 /* Build configuration list for PBXNativeTarget "autodylib debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B51FFB0957B18600E999B7 /* Development */,
+				39B51FFC0957B18600E999B7 /* Deployment */,
+				39B51FFD0957B18600E999B7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		39B520020957B18600E999B7 /* Build configuration list for PBXNativeTarget "autodylib nodebug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B520030957B18600E999B7 /* Development */,
+				39B520040957B18600E999B7 /* Deployment */,
+				39B520050957B18600E999B7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		39B520060957B18600E999B7 /* Build configuration list for PBXProject "auto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B520070957B18600E999B7 /* Development */,
+				39B520080957B18600E999B7 /* Deployment */,
+				39B520090957B18600E999B7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		39D2F9060B3C5FAC005F3C78 /* Build configuration list for PBXNativeTarget "test_bitmaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39D2F9070B3C5FAC005F3C78 /* Development */,
+				39D2F9080B3C5FAC005F3C78 /* Deployment */,
+				39D2F9090B3C5FAC005F3C78 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.3.10: http://docutils.sourceforge.net/" />
+<title>AUTOZONE</title>
+<meta name="copyright" content="2008 Apple Inc. All rights reserved." />
+<style type="text/css">
+
+/*
+:Author: Fred L. Drake, Jr.
+:date: $Date: 2004/03/31 22:31:05 $
+:version: $Revision: 1.7 $
+
+This stylesheet combines some ideas from the two stylesheets
+distributed with docutils and enhances them for Zope 3 documentation.
+*/
+
+@import url(http://rst2a.com/static/styles/html/default.css);
+
+body {
+  margin: 0px 1em 1em 4em;
+  padding: 0px; }
+
+h1.title {
+  background-image: url("zope3logo.gif");
+  background-position: -6px -4px;
+  background-repeat: no-repeat;
+  font-size: 150%;
+  min-height: 42px; }
+
+div.section {
+  margin: 0px 0px 1.5em 0px; }
+
+div.section h1 {
+  background-color: rgb(230,230,230);
+  margin-left: -2em;
+  padding: 0.2em;
+  padding-left: 0.35em;
+  padding-top: 0.35em;
+  /* This grey underline make this more visually distinctive on LCD
+     monitors, which often don't have enough contrast. */
+  border-right: thin solid rgb(180,180,180);
+  border-bottom: thin solid rgb(180,180,180); }
+
+div.section div.section div.section h3 {
+  margin-left: -1.9em;
+  margin-bottom: -0.5em; }
+
+h1 {
+  font-family: sans-serif;
+  font-size: 135%; }
+
+h2 {
+  font-family: sans-serif;
+  font-size: 120%; }
+
+h3 {
+  font-family: sans-serif;
+  font-size: 105%; }
+
+h4 {
+  font-family: sans-serif;
+  font-size: 100%; }
+
+h5 {
+  font-family: sans-serif;
+  font-size: 100%; }
+
+h6 {
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 100%; }
+
+hr {
+  width: 75%; }
+
+.literal .pre {
+  background-color: white;
+  font-family: lucidatypewriter, "lucida typewriter", sans-serif; }
+
+.literal-block {
+  border: thin solid rgb(180,180,180);
+  font-family: lucidatypewriter, "lucida typewriter", monospace;
+  font-size: 80%;
+  padding: 0.5em; }
+
+table.table {
+  margin-left: 2em;
+  margin-right: 2em; }
+
+table.table thead {
+  background-color: rgb(230,230,230); }
+
+dt {
+  font-weight: bold; }
+
+/* docutils uses the "option" class with both "col" and "span"
+   elements, so we have to be explicit here */
+.option-list span.option {
+  font-weight: bold; }
+
+.option-list kbd {
+  font-family: inherit; }
+
+</style>
+</head>
+<body>
+<div class="document" id="autozone">
+<h1 class="title">AUTOZONE</h1>
+<table class="docinfo" frame="void" rules="none">
+<col class="docinfo-name" />
+<col class="docinfo-content" />
+<tbody valign="top">
+<tr><th class="docinfo-name">Copyright:</th>
+<td>2008 Apple Inc. All rights reserved.</td></tr>
+</tbody>
+</table>
+<div class="contents topic" id="contents">
+<p class="topic-title first"><a name="contents">Contents</a></p>
+<ul class="simple">
+<li><a class="reference" href="#introduction" id="id1" name="id1">Introduction</a></li>
+<li><a class="reference" href="#implementation-overview" id="id2" name="id2">Implementation Overview</a><ul>
+<li><a class="reference" href="#scanning" id="id3" name="id3">Scanning</a></li>
+<li><a class="reference" href="#conservative" id="id4" name="id4">Conservative</a></li>
+<li><a class="reference" href="#generational" id="id5" name="id5">Generational</a></li>
+<li><a class="reference" href="#multi-threaded" id="id6" name="id6">Multi-threaded</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h1><a class="toc-backref" href="#id1" name="introduction">Introduction</a></h1>
+<p><strong>AutoZone</strong> is a <a class="reference" href="#scanning">scanning</a>, <a class="reference" href="#conservative">conservative</a>, <a class="reference" href="#generational">generational</a>, <a class="reference" href="#multi-threaded">multi-threaded</a> garbage collector.  Specifically, it is the garbage collector used by the <a class="reference" href="http://developer.apple.com/Cocoa/">Cocoa</a> frameworks within <a class="reference" href="http://www.apple.com/macosx/">Mac OS X Leopard</a> and <a class="reference" href="http://developer.apple.com/tools/xcode/">Xcode</a>, the premiere development environment for <a class="reference" href="http://developer.apple.com/macosx/">Mac OS X</a> and <a class="reference" href="http://developer.apple.com/iphone/">iPhone</a> application development, is one of several garbage collected applications that shipped with Leopard.</p>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">The implementation of the <em>AutoZone</em> (Mac OS X Objective-C Garbage Collector) will change significantly in Snow Leopard.</p>
+</div>
+<p>While <strong>AutoZone</strong> was tested and deployed with a focus on supporting <a class="reference" href="http://developer.apple.com/Cocoa/">Cocoa</a> application development, the implementation is language agnostic.   For example, the <a class="reference" href="http://www.macruby.org/trac/wiki/MacRuby">MacRuby</a> project uses the <strong>AutoZone</strong> collector to provide fully automatic garbage collection of object graphs that span between Ruby and Objective-C!</p>
+</div>
+<div class="section" id="implementation-overview">
+<h1><a class="toc-backref" href="#id2" name="implementation-overview">Implementation Overview</a></h1>
+<p>The <strong>AutoZone</strong> collector is implemented in C++ and is designed to work in a runtime where some or most of the application's memory may be managed by mechanisms other than the collector.  Object graphs may span between scanned and unscanned zones of memory.  Facilities are included for maintaining a reference count of any given memory object.</p>
+<p><strong>AutoZone</strong> also offers support for weak references that are automatically nullified when the memory referred to by the weak reference no longer has strong references.   For compiled languages, support for memory barriers can be integrated into the compiler such that normal assignments will update internal collector state.</p>
+<p>The collector also includes statistics gathering and the ability to monitor the collector state from external processes.   Thus, the collector can dump information about the object graph within an application at any time.</p>
+<p>The collector specifically does not support resurrection and will warn when resurrection is detected.</p>
+<p>Some high level details of the implementation follow.  For specific details, see the source code.</p>
+<div class="section" id="scanning">
+<h2><a class="toc-backref" href="#id3" name="scanning">Scanning</a></h2>
+<p>The <strong>AutoZone</strong> collector actively scans memory, looking for references between objects in memory.   The collector builds a graph of these objects and any objects that are not rooted -- not connected directly or indirectly to globals, the stack, or have been manually retained -- are automatically finalized and deallocated.</p>
+</div>
+<div class="section" id="conservative">
+<h2><a class="toc-backref" href="#id4" name="conservative">Conservative</a></h2>
+<p>Unlike some garbage collectors, <strong>AutoZone</strong> does not move memory.  As it is designed to work well within the C language and within runtimes that may be partially unscanned, the collector assumes that the address of a memory object may be meaningful.</p>
+</div>
+<div class="section" id="generational">
+<h2><a class="toc-backref" href="#id5" name="generational">Generational</a></h2>
+<p>In general, most objects within an application are short lived.  Thus, the <strong>AutoZone</strong> collector uses a generational algorithm  such that short-lived objects are scanned more frequently than older objects.  By focusing on scanning the newer generation of objets more proactively, the collector can efficiently reap garbage -- no longer needed memory objects -- without incurring the cost of a full scan.</p>
+</div>
+<div class="section" id="multi-threaded">
+<h2><a class="toc-backref" href="#id6" name="multi-threaded">Multi-threaded</a></h2>
+<p>The <strong>AutoZone</strong> collector typically runs on its own background thread and will not block other threads of execution within an application.  The collector will rarely block the execution of other threads and, when it does so, minimizes the amount of time that execution is stopped.</p>
+</div>
+</div>
+</div>
+</body>
+</html>

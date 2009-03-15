@@ -511,7 +511,6 @@ struct RClass {
 # define RCLASS_IS_HASH_SUBCLASS      0x40000 /* class is a subclass of NSCFDictionary */
 # define RCLASS_IS_INCLUDED           0x80000 /* module is included */
 # define RCLASS_IS_SET_SUBCLASS       0x100000 /* class is a subclass of NSCFSet */
-# if defined(__LP64__)
 #  define RCLASS_VERSION(m) (class_getVersion((Class)m))
 #  define RCLASS_SET_VERSION(m,f) (class_setVersion((Class)m, f))
 #  define RCLASS_SET_VERSION_FLAG(m,f) (class_setVersion((Class)m, (RCLASS_VERSION(m) | f)))
@@ -519,15 +518,6 @@ struct RClass {
 #  define RCLASS_SET_SUPER(m, s) (class_setSuperclass((Class)m, (Class)s))
 #  define RCLASS_META(m) (class_isMetaClass((Class)m))
 #  define RCLASS_RC_FLAGS(m) (*(uint32_t *) ((void *)(m) + sizeof(uintptr_t) + (sizeof(uint8_t) * 4)))
-# else
-#  define RCLASS_VERSION(m) (*(long *)((void *)m + (sizeof(void *) * 3)))
-#  define RCLASS_SET_VERSION(m,f) do { RCLASS_VERSION(m) = f; } while (0)
-#  define RCLASS_SET_VERSION_FLAG(m,f) (RCLASS_VERSION(m) |= f)
-#  define RCLASS_SUPER(m) (*(VALUE *)((void *)m + (sizeof(void *) * 1)))
-#  define RCLASS_SET_SUPER(m, s) (RCLASS_SUPER(m) = s)
-#  define _RCLASS_INFO(m) (*(long *)((void *)m + (sizeof(void *) * 4)))
-#  define RCLASS_META(m) (_RCLASS_INFO(m) & 2L)
-# endif
 # define RCLASS_RUBY(m) ((RCLASS_VERSION(m) & RCLASS_IS_RUBY_CLASS) == RCLASS_IS_RUBY_CLASS)
 # define RCLASS_MODULE(m) ((RCLASS_VERSION(m) & RCLASS_IS_MODULE) == RCLASS_IS_MODULE)
 # define RCLASS_SINGLETON(m) ((RCLASS_VERSION(m) & RCLASS_IS_SINGLETON) == RCLASS_IS_SINGLETON)

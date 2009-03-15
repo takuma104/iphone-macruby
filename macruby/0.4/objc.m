@@ -1795,19 +1795,20 @@ rb_ruby_to_objc_closure(const char *octype, unsigned arity, NODE *node)
      * XXX currently overwriting a closure leaks the previous one!
      */
 
-    if ((closure = mmap(NULL, sizeof(ffi_closure), PROT_READ | PROT_WRITE,
-			MAP_ANON | MAP_PRIVATE, -1, 0)) == (void *)-1) {
-	rb_fatal("can't allocate ruby to objc closure");
-    }
+	closure = (ffi_closure *)malloc(sizeof(ffi_closure));
+//    if ((closure = mmap(NULL, sizeof(ffi_closure), PROT_READ | PROT_WRITE,
+//			MAP_ANON | MAP_PRIVATE, -1, 0)) == (void *)-1) {
+//	rb_fatal("can't allocate ruby to objc closure");
+  //  }
 
     if (ffi_prep_closure(closure, cif, rb_ruby_to_objc_closure_handler, node)
 	!= FFI_OK) {
 	rb_fatal("can't prepare ruby to objc closure");
     }
 
-    if (mprotect(closure, sizeof(closure), PROT_READ | PROT_EXEC) == -1) {
-	rb_fatal("can't mprotect the ruby to objc closure");
-    }
+//    if (mprotect(closure, sizeof(closure), PROT_READ | PROT_EXEC) == -1) {
+//	rb_fatal("can't mprotect the ruby to objc closure");
+//    }
 
     rb_objc_retain(node);
 

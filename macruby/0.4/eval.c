@@ -81,7 +81,7 @@ ruby_init(void)
     char *s;
    
     s = getenv("MACRUBY_DEBUG");
-    ruby_dlog_enabled = !(s == NULL || *s == '0');
+    ruby_dlog_enabled = true;//!(s == NULL || *s == '0');
     s = getenv("MACRUBY_DEBUG_FILE");
     if (s == NULL) {
 	ruby_dlog_file = stderr;

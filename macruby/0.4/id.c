@@ -61,7 +61,7 @@ Init_id(void)
     selInit = sel_registerName("init");
     selCopy = sel_registerName("copy");
     sel_ignored = sel_registerName("retain");
-    assert(sel_ignored == sel_registerName("release"));
+//    assert(sel_ignored == sel_registerName("release"));
     sel_zone = sel_registerName("zone");
 #endif
 

@@ -12,6 +12,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		8D0DC0980F6D2408005C9260 /* ascii.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0DC0630F6D2408005C9260 /* ascii.c */; };
+		8D0DC1580F6D4058005C9260 /* main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8D0DC1570F6D4058005C9260 /* main.rb */; };
 		8D25D4AE0F66AA2E00B9073F /* AutoMemoryScanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4750F66AA2E00B9073F /* AutoMemoryScanner.cpp */; };
 		8D25D4AF0F66AA2E00B9073F /* AutoWriteBarrier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D4760F66AA2E00B9073F /* AutoWriteBarrier.cpp */; };
 		8D25D4B00F66AA2E00B9073F /* AutoMonitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D25D47A0F66AA2E00B9073F /* AutoMonitor.cpp */; };
@@ -68,7 +69,6 @@
 		8D7B31230F665FE600BE35D8 /* numeric.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B30DA0F665FE600BE35D8 /* numeric.c */; };
 		8D7B31240F665FE600BE35D8 /* math.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B30DB0F665FE600BE35D8 /* math.c */; };
 		8D7B31250F665FE600BE35D8 /* marshal.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B30DC0F665FE600BE35D8 /* marshal.c */; };
-		8D7B31270F665FE600BE35D8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B30DE0F665FE600BE35D8 /* main.c */; };
 		8D7B31280F665FE600BE35D8 /* load.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B30DF0F665FE600BE35D8 /* load.c */; };
 		8D7B312A0F665FE600BE35D8 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B30E10F665FE600BE35D8 /* io.c */; };
 		8D7B312B0F665FE600BE35D8 /* inits.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B30E20F665FE600BE35D8 /* inits.c */; };
@@ -121,6 +121,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* iphone_macruby_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iphone_macruby_Prefix.pch; sourceTree = "<group>"; };
 		8D0DC0630F6D2408005C9260 /* ascii.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ascii.c; sourceTree = "<group>"; };
+		8D0DC1570F6D4058005C9260 /* main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = main.rb; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D25D46A0F66AA2E00B9073F /* AutoEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoEnvironment.h; path = "autozone-77.1/AutoEnvironment.h"; sourceTree = "<group>"; };
 		8D25D46C0F66AA2E00B9073F /* AutoLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoLock.h; path = "autozone-77.1/AutoLock.h"; sourceTree = "<group>"; };
@@ -218,7 +219,6 @@
 		8D7B30DA0F665FE600BE35D8 /* numeric.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = numeric.c; path = macruby/0.4/numeric.c; sourceTree = "<group>"; };
 		8D7B30DB0F665FE600BE35D8 /* math.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = math.c; path = macruby/0.4/math.c; sourceTree = "<group>"; };
 		8D7B30DC0F665FE600BE35D8 /* marshal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = marshal.c; path = macruby/0.4/marshal.c; sourceTree = "<group>"; };
-		8D7B30DE0F665FE600BE35D8 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = macruby/0.4/main.c; sourceTree = "<group>"; };
 		8D7B30DF0F665FE600BE35D8 /* load.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = load.c; path = macruby/0.4/load.c; sourceTree = "<group>"; };
 		8D7B30E10F665FE600BE35D8 /* io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = io.c; path = macruby/0.4/io.c; sourceTree = "<group>"; };
 		8D7B30E20F665FE600BE35D8 /* inits.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = inits.c; path = macruby/0.4/inits.c; sourceTree = "<group>"; };
@@ -340,6 +340,7 @@
 			children = (
 				32CA4F630368D1EE00C91783 /* iphone_macruby_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				8D0DC1570F6D4058005C9260 /* main.rb */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -511,7 +512,6 @@
 				8D7B30DA0F665FE600BE35D8 /* numeric.c */,
 				8D7B30DB0F665FE600BE35D8 /* math.c */,
 				8D7B30DC0F665FE600BE35D8 /* marshal.c */,
-				8D7B30DE0F665FE600BE35D8 /* main.c */,
 				8D7B30DF0F665FE600BE35D8 /* load.c */,
 				8D7B30E10F665FE600BE35D8 /* io.c */,
 				8D7B30E20F665FE600BE35D8 /* inits.c */,
@@ -623,6 +623,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0DC1580F6D4058005C9260 /* main.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,7 +667,6 @@
 				8D7B31230F665FE600BE35D8 /* numeric.c in Sources */,
 				8D7B31240F665FE600BE35D8 /* math.c in Sources */,
 				8D7B31250F665FE600BE35D8 /* marshal.c in Sources */,
-				8D7B31270F665FE600BE35D8 /* main.c in Sources */,
 				8D7B31280F665FE600BE35D8 /* load.c in Sources */,
 				8D7B312A0F665FE600BE35D8 /* io.c in Sources */,
 				8D7B312B0F665FE600BE35D8 /* inits.c in Sources */,
